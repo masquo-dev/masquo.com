@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- sécurité : seulement le petit script du compteur de visites ; polices et style de cette page autorisés un par un (empreinte) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' 'sha256-CL4gncpY/StfAGsN4lU8+w1IDZvwEszQAe40FxHCuek='; font-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'; connect-src https://visites.lagon-stats.workers.dev; script-src 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="noindex">
+  <title>Page introuvable · Page not found · Masquo</title>
+  <meta name="theme-color" content="#0d0617">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ffc23a'/%3E%3Cstop offset='.55' stop-color='%23ff6a4d'/%3E%3Cstop offset='1' stop-color='%23e0247f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='%230d0617'/%3E%3Ccircle cx='16' cy='22' r='9' fill='url(%23g)'/%3E%3Crect x='4' y='21' width='24' height='1.6' fill='%23ffd27a'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/fonts/polices.css">
+  <style>
+    * { box-sizing: border-box; }
+    html, body { min-height: 100%; overflow-x: clip; }
+    body { margin: 0; display: grid; align-items: center; padding: 40px 24px; overflow-x: hidden; position: relative;
+      font: 400 17px/1.6 Barlow, "Segoe UI", system-ui, sans-serif; color: #fbf3ff;
+      background: linear-gradient(180deg, #0a0413 0%, #140927 55%, #2a0d3c 100%); }
+    body::before { content: ""; position: absolute; left: 55%; bottom: -36%; width: 140vmax; aspect-ratio: 1 / .62; transform: translateX(-50%); border-radius: 50%; z-index: -1;
+      background: radial-gradient(closest-side, rgba(255, 194, 58, .95) 0%, rgba(255, 106, 77, .85) 16%, rgba(224, 36, 127, .6) 34%, rgba(123, 60, 240, .32) 54%, rgba(13, 6, 23, 0) 74%); }
+    body::after { content: ""; position: absolute; left: 0; right: 0; bottom: 14%; height: 1px; z-index: -1;
+      background: linear-gradient(90deg, transparent, rgba(255, 214, 130, .95) 38%, rgba(255, 214, 130, .95) 78%, transparent); box-shadow: 0 0 24px 2px rgba(255, 170, 90, .65); }
+    main { width: min(1100px, 100%); margin: 0 auto; }
+    .logo { font: 800 20px/1 Unbounded, sans-serif; color: #fbf3ff; text-decoration: none; }
+    .logo b { color: #ffc23a; }
+    .big { margin: 30px 0 0; font: 800 clamp(96px, 18vw, 220px)/.9 Unbounded, sans-serif; letter-spacing: -.05em;
+      background: linear-gradient(90deg, #ffc23a, #ff6a4d 55%, #e0247f); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    h1 { margin: 18px 0 0; font: 800 clamp(26px, 3.6vw, 44px)/1.08 Unbounded, sans-serif; letter-spacing: -.03em; }
+    .en { margin: 8px 0 0; color: #b7a6c9; font-size: 18px; }
+    .txt { margin: 16px 0 0; max-width: 46ch; color: #b7a6c9; }
+    .btns { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .btn { display: inline-flex; align-items: center; padding: 14px 22px; border-radius: 999px; font-weight: 600; text-decoration: none; }
+    .btn--main { color: #0d0617; background: #fbf3ff; }
+    .btn--alt { color: #fbf3ff; box-shadow: inset 0 0 0 1.5px rgba(251, 243, 255, .35); }
+    .priv { margin: 34px 0 0; max-width: 70ch; font-size: 13px; color: #8f7ba6; }
+  </style>
+<script src="/m.js?v=2" defer data-nf></script>
+</head>
+<body>
+  <main>
+    <a class="logo" href="/">masquo<b>.</b></a>
+    <p class="big">404</p>
+    <h1>Cette page s’est perdue dans la nuit.</h1>
+    <p class="en" lang="en">This page got lost in the night.</p>
+    <p class="txt">Le lien est peut-être ancien ou mal tapé. Tout le reste vous attend sur la page d’accueil.</p>
+    <div class="btns">
+      <a class="btn btn--main" href="/">Retour à l’accueil · Home</a>
+      <a class="btn btn--alt" href="/#work">Mes réalisations · My work</a>
+      <a class="btn btn--alt" href="/#contact">Parlons de votre projet · Contact</a>
+    </div>
+    <p class="priv">Adresse IP, lieu approximatif (pays, région, ville), opérateur, page visitée, provenance, navigateur et langue enregistrés 30 jours, pour la sécurité et les statistiques.<br><span lang="en">IP address, approximate location (country, region, city), internet provider, page visited, source, browser and language are kept for 30 days, for security and statistics.</span></p>
+  </main>
+</body>
+</html>

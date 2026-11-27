@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- sécurité : tout vient de ce site, aucun script extérieur, aucun vrai paiement (boutique de démonstration) -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: blob:; media-src 'self'; connect-src 'self' https://visites.lagon-stats.workers.dev; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BRUME · A fragrance with their name</title>
+<meta name="description" content="BRUME eau de parfum: a crystal bottle cut like a diamond, engraved with a name. Lychee, mango, golden amber. Free delivery, gift box, one-tap payment. Fictional brand, demo shop by Masquo.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#b8327f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Cpath d=%27M16 2 28 12 16 30 4 12Z%27 fill=%27%23e0247f%27/%3E%3C/svg%3E">
+<meta property="og:title" content="BRUME · A fragrance with their name">
+<meta property="og:image" content="media/web/prisme-full.jpg">
+<link rel="stylesheet" href="fonts/polices.css">
+<link rel="preload" as="image" href="media/web/prisme-scene.jpg?v=2">
+<link rel="preload" as="image" href="media/web/prisme-flacon.webp?v=2">
+<link rel="stylesheet" href="style.css?v=21">
+<script src="main.js?v=21" defer></script>
+<script src="/m.js?v=2" defer></script>
+</head>
+<body>
+<a class="skip" href="#card" data-t="skip">Skip to the shop</a>
+
+<header class="nav" id="nav">
+  <a class="logo" href="#top" aria-label="BRUME">BRUME</a>
+  <nav class="menu" aria-label="Menu">
+    <a href="#notes" data-t="m.notes">The notes</a>
+    <a href="#flacon" data-t="m.flacon">The bottle</a>
+    <a href="#avis" data-t="m.avis">Reviews</a>
+    <a href="#livraison" data-t="m.ship">Delivery</a>
+    <a href="#faq" data-t="m.faq">FAQ</a>
+  </nav>
+  <div class="nav__right">
+    <p class="nav__ed"><span class="dot"></span><span id="edLeft">652</span>&nbsp;<span data-t="nav.left">of 1,000 bottles left</span></p>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="fr" lang="fr">FR</button>
+      <button type="button" data-lang="en" lang="en">EN</button>
+    </div>
+    <button type="button" class="bag" id="bagBtn" aria-label="Bag">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8" fill="none" stroke="currentColor" stroke-width="1.7"/></svg>
+      <b class="bag__n" id="bagN" hidden>0</b>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- le décor vit, le flacon flotte, le prénom se grave dans le cristal -->
+  <section class="hero" id="hero">
+    <div class="view" id="view">
+    <div class="blur" aria-hidden="true"></div>
+    <div class="scene" id="scene" aria-hidden="true">
+      <img class="scene__bg" src="media/web/prisme-scene.jpg?v=2" alt="" width="1672" height="941">
+      <div class="sun"></div>
+      <div class="fall fall--l"></div>
+      <div class="fall fall--r"></div>
+      <div class="caustic caustic--l"></div>
+      <div class="caustic caustic--r"></div>
+      <div class="shadow" id="shadow"></div>
+      <div class="bottle" id="bottle">
+        <div class="bottle__float" id="float">
+          <img class="bottle__img" id="bottleImg" src="media/web/prisme-flacon.webp?v=2" alt="" width="603" height="643">
+          <div class="bottle__light" id="light"></div>
+          <div class="bottle__sweep"></div>
+          <svg class="engrave" id="engrave" viewBox="0 0 603 643" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="frost" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#fffaf4"/><stop offset=".55" stop-color="#ffeef6"/><stop offset="1" stop-color="#ffe0c4"/>
+              </linearGradient>
+              <filter id="soft" x="-10%" y="-30%" width="120%" height="160%"><feGaussianBlur stdDeviation="0.7"/></filter>
+              <filter id="glow" x="-30%" y="-60%" width="160%" height="220%"><feGaussianBlur stdDeviation="3"/></filter>
+              <radialGradient id="hot"><stop offset="0" stop-color="#fff"/><stop offset=".3" stop-color="#fff4c8"/><stop offset=".65" stop-color="#ffb347" stop-opacity=".55"/><stop offset="1" stop-color="#ff7a1a" stop-opacity="0"/></radialGradient>
+              <clipPath id="reveal"><rect id="revealRect" x="0" y="0" width="0" height="643"/></clipPath>
+            </defs>
+            <g id="engraveText" clip-path="url(#reveal)">
+              <text id="tShadow" class="e-name" x="304.5" y="331.6" fill="rgba(110,10,60,.42)" filter="url(#soft)"></text>
+              <text id="tGlow" class="e-name" x="303" y="330" fill="#fff" opacity=".55" filter="url(#glow)"></text>
+              <text id="tBody" class="e-name" x="303" y="330" fill="url(#frost)" stroke="rgba(255,226,170,.9)" stroke-width=".7"></text>
+              <text id="tNum" class="e-num" x="303" y="372" fill="rgba(255,246,236,.9)"></text>
+            </g>
+            <g id="spark" opacity="0">
+              <circle r="26" fill="url(#hot)"/>
+              <circle r="3.2" fill="#fff"/>
+            </g>
+          </svg>
+          <div class="glints" id="glints"></div>
+        </div>
+      </div>
+    </div>
+    <div class="petals" id="petals" aria-hidden="true"></div>
+    </div>
+
+    <!-- l'achat, en verre, posé sur le décor -->
+    <div class="card" id="card">
+      <p class="eyebrow" data-t="eyebrow">Eau de parfum · Limited edition</p>
+      <h1 class="title"><span data-t="title1">A fragrance</span> <em data-t="title2">with their name.</em></h1>
+      <p class="lead" data-t="lead">A crystal cut like a diamond, a rose and gold perfume. Type a name: it is engraved on the bottle, live.</p>
+
+      <label class="field">
+        <span data-t="field.label">Name to engrave</span>
+        <input id="name" type="text" maxlength="12" autocomplete="off" spellcheck="false" value="Sarah">
+      </label>
+      <div class="row">
+        <div class="seg" role="radiogroup" aria-label="Lettering" id="styles">
+          <button type="button" role="radio" data-style="script" aria-checked="true" data-t="style.script">Handwritten</button>
+          <button type="button" role="radio" data-style="caps" aria-checked="false" data-t="style.caps">Capitals</button>
+        </div>
+        <div class="seg" role="radiogroup" aria-label="Size" id="sizes">
+          <button type="button" role="radio" data-size="0" aria-checked="true">50 ml</button>
+          <button type="button" role="radio" data-size="1" aria-checked="false">100 ml</button>
+        </div>
+      </div>
+
+      <div class="price">
+        <b id="price">€89</b>
+        <span id="ppl">incl. VAT · €1,780 / L</span>
+      </div>
+
+      <button type="button" class="buy" id="buy"><span data-t="buy">Buy the perfume of your dreams</span><i aria-hidden="true"></i></button>
+      <p class="card__trust" data-t="card.trust">Free delivery · gift box · secure payment</p>
+    </div>
+  </section>
+
+  <!-- comment ça marche -->
+  <section class="how">
+    <ol>
+      <li><b>1</b><span data-t="how1">Type a name</span></li>
+      <li><b>2</b><span data-t="how2">It is engraved in the crystal</span></li>
+      <li><b>3</b><span data-t="how3">Pay in one tap</span></li>
+      <li><b>4</b><span data-t="how4">Gift box, delivered in 48 h</span></li>
+    </ol>
+  </section>
+
+  <!-- ce qu'il sent : les trois couleurs du parfum -->
+  <section class="notes" id="notes">
+    <p class="kicker" data-t="notes.kicker">The perfume</p>
+    <h2 class="h2" data-t="notes.title">What it smells like.</h2>
+    <div class="notes__grid">
+      <article class="note note--1"><div class="note__img"><img src="media/web/note-litchi.jpg?v=1" alt="" loading="lazy" width="900" height="900"></div>
+        <div class="note__body"><p class="note__when" data-t="n1.when">The first minute</p><h3 data-t="n1.name">Lychee & hibiscus</h3><p class="note__txt" data-t="n1.txt">The pink at the top of the bottle: bright, juicy, almost sparkling.</p></div></article>
+      <article class="note note--2"><div class="note__img"><img src="media/web/note-mangue.jpg?v=1" alt="" loading="lazy" width="900" height="900"></div>
+        <div class="note__body"><p class="note__when" data-t="n2.when">After ten minutes</p><h3 data-t="n2.name">Mango & orange blossom</h3><p class="note__txt" data-t="n2.txt">The orange in the middle: sunny, creamy, like the end of the afternoon.</p></div></article>
+      <article class="note note--3"><div class="note__img"><img src="media/web/note-ambre.jpg?v=1" alt="" loading="lazy" width="900" height="900"></div>
+        <div class="note__body"><p class="note__when" data-t="n3.when">Until the evening</p><h3 data-t="n3.name">Golden amber & sandalwood</h3><p class="note__txt" data-t="n3.txt">The gold at the bottom: warm, soft, it stays on the skin.</p></div></article>
+    </div>
+  </section>
+
+  <!-- le flacon : fiche, composition, précautions -->
+  <section class="flacon" id="flacon">
+    <div class="flacon__img" role="img" data-t-aria="flacon.alt" aria-label="The crystal bottle"></div>
+    <div class="flacon__txt">
+      <p class="kicker" data-t="flacon.kicker">The bottle</p>
+      <h2 class="h2" data-t="flacon.title">A crystal cut like a diamond.</h2>
+      <p class="flacon__lead" data-t="flacon.lead">Each facet catches the light and throws small rainbows. The cap is polished gold. The name is engraved by hand-guided laser, the same day.</p>
+      <dl class="specs">
+        <div><dt data-t="s1.k">Concentration</dt><dd data-t="s1.v">Eau de parfum, 18 %</dd></div>
+        <div><dt data-t="s2.k">Fragrance family</dt><dd data-t="s2.v">Floral, fruity, amber</dd></div>
+        <div><dt data-t="s3.k">Lasts</dt><dd data-t="s3.v">8 to 10 hours</dd></div>
+        <div><dt data-t="s4.k">Sizes</dt><dd>50 ml · 100 ml</dd></div>
+        <div><dt data-t="s5.k">Engraving</dt><dd data-t="s5.v">Handwritten or capitals, 12 letters</dd></div>
+        <div><dt data-t="s6.k">Made in</dt><dd data-t="s6.v">Grasse, France (fictional brand)</dd></div>
+      </dl>
+      <details class="acc"><summary data-t="acc1.t">Ingredients</summary><div class="acc__b" data-t="acc1.b"></div></details>
+      <details class="acc"><summary data-t="acc2.t">Precautions</summary><div class="acc__b" data-t="acc2.b"></div></details>
+      <details class="acc"><summary data-t="acc3.t">How to wear it</summary><div class="acc__b" data-t="acc3.b"></div></details>
+    </div>
+  </section>
+
+  <!-- garanties -->
+  <section class="guar" aria-label="Guarantees">
+    <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="7" cy="17.5" r="1.8" fill="#fff" stroke="currentColor" stroke-width="1.6"/><circle cx="17" cy="17.5" r="1.8" fill="#fff" stroke="currentColor" stroke-width="1.6"/></svg><b data-t="g1.t">Free delivery</b><span data-t="g1.s">Tracked, in 48 h</span></div>
+    <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10h16v10H4zM3 7h18v3H3zM12 7v13M12 7c-2-4-6-3-5 0M12 7c2-4 6-3 5 0" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><b data-t="g2.t">Gift box included</b><span data-t="g2.s">With a note if you wish</span></div>
+    <div><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 10V7.5a4 4 0 0 1 8 0V10" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><b data-t="g3.t">Secure payment</b><span data-t="g3.s">Google Pay, Apple Pay, card</span></div>
+    <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 20 6v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><b data-t="g4.t">Breakage replaced</b><span data-t="g4.s">Damaged on arrival: a new one, free</span></div>
+  </section>
+
+  <!-- avis (d'exemple, clairement marqués) -->
+  <section class="avis" id="avis">
+    <p class="kicker" data-t="avis.kicker">Reviews</p>
+    <h2 class="h2" data-t="avis.title">They gave it as a gift.</h2>
+    <p class="avis__score"><span class="stars" aria-hidden="true">★★★★★</span> <b data-t="avis.score">4.8 out of 5</b> <span class="tag" data-t="avis.tag">Sample reviews</span></p>
+    <div class="avis__grid">
+      <figure class="rev"><span class="stars" aria-label="5/5">★★★★★</span><blockquote data-t="r1.t"></blockquote><figcaption><i>C</i><span data-t="r1.a">Camille R.</span></figcaption></figure>
+      <figure class="rev"><span class="stars" aria-label="5/5">★★★★★</span><blockquote data-t="r2.t"></blockquote><figcaption><i>I</i><span data-t="r2.a">Inès M.</span></figcaption></figure>
+      <figure class="rev"><span class="stars" aria-label="4/5">★★★★<s>★</s></span><blockquote data-t="r3.t"></blockquote><figcaption><i>T</i><span data-t="r3.a">Thomas L.</span></figcaption></figure>
+    </div>
+    <p class="avis__note" data-t="avis.note">Sample reviews: this is a demo shop, these reviews are not real.</p>
+  </section>
+
+  <!-- livraison et retours -->
+  <section class="ship" id="livraison">
+    <p class="kicker" data-t="ship.kicker">Delivery & returns</p>
+    <h2 class="h2" data-t="ship.title">Engraved today, at your door in 48 h.</h2>
+    <div class="ship__grid">
+      <article><h3 data-t="sh1.t">Delivery</h3><p data-t="sh1.b"></p></article>
+      <article><h3 data-t="sh2.t">Returns</h3><p data-t="sh2.b"></p></article>
+      <article><h3 data-t="sh3.t">Breakage or defect</h3><p data-t="sh3.b"></p></article>
+    </div>
+  </section>
+
+  <!-- questions fréquentes -->
+  <section class="faq" id="faq">
+    <p class="kicker" data-t="faq.kicker">Questions</p>
+    <h2 class="h2" data-t="faq.title">Everything you want to know.</h2>
+    <div class="faq__list">
+      <details class="acc"><summary data-t="q1"></summary><div class="acc__b" data-t="a1"></div></details>
+      <details class="acc"><summary data-t="q2"></summary><div class="acc__b" data-t="a2"></div></details>
+      <details class="acc"><summary data-t="q3"></summary><div class="acc__b" data-t="a3"></div></details>
+      <details class="acc"><summary data-t="q4"></summary><div class="acc__b" data-t="a4"></div></details>
+      <details class="acc"><summary data-t="q5"></summary><div class="acc__b" data-t="a5"></div></details>
+      <details class="acc"><summary data-t="q6"></summary><div class="acc__b" data-t="a6"></div></details>
+    </div>
+  </section>
+
+  <!-- lettre d'information -->
+  <section class="news">
+    <div class="news__in">
+      <h2 class="news__t" data-t="nl.title">Get 10% off your first bottle.</h2>
+      <p data-t="nl.lead">One letter a month, no more. Unsubscribe in one click.</p>
+      <form class="news__f" id="newsForm" novalidate>
+        <label class="sr" for="newsMail" data-t="nl.ph">Your email</label>
+        <input id="newsMail" type="email" autocomplete="email" data-t-ph="nl.ph" placeholder="Your email" required>
+        <button type="submit" data-t="nl.btn">Sign up</button>
+      </form>
+      <p class="news__legal" data-t="nl.legal"></p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="foot__cols">
+    <div><p class="logo logo--foot">BRUME</p><p class="foot__tag" data-t="f.tag">A fragrance, with their name.</p></div>
+    <div><h3 data-t="f.shop">Shop</h3><a href="#top" data-t="f.l1">The perfume</a><a href="#notes" data-t="m.notes">The notes</a><a href="#flacon" data-t="m.flacon">The bottle</a></div>
+    <div><h3 data-t="f.help">Help</h3><a href="#livraison" data-t="m.ship">Delivery</a><a href="#livraison" data-t="f.returns">Returns</a><a href="#faq" data-t="m.faq">FAQ</a><a href="#" data-legal="contact" data-t="f.contact">Contact</a></div>
+    <div><h3 data-t="f.legal">Legal</h3><a href="#" data-legal="mentions" data-t="f.mentions">Legal notice</a><a href="#" data-legal="cgv" data-t="f.cgv">Terms of sale</a><a href="#" data-legal="privacy" data-t="f.privacy">Privacy</a><a href="#" data-legal="cookies" data-t="f.cookies">Cookies</a></div>
+    <div><h3 data-t="f.pay">Payment</h3><p data-t="f.paytxt">Google Pay · Apple Pay · Bank card</p><p data-t="f.vat">Prices in euros, VAT included.</p><h3 data-t="f.follow">Follow us</h3><p>Instagram · TikTok</p></div>
+  </div>
+  <p class="foot__demo" data-t="foot">BRUME is a fictional brand and this is a demo shop: no payment is requested and nothing is charged. Bottle, ingredients and scenery images created with AI. Designed by <a href="https://masquo.com">Masquo</a>, websites that sell. IP address, approximate location (country, region, city), internet provider, page visited, source, browser and language are kept for 30 days, for security and statistics.</p>
+  <p class="foot__copy">© 2026 BRUME</p>
+</footer>
+
+<!-- barre d'achat sur téléphone -->
+<div class="sticky" id="sticky">
+  <p><b>BRUME</b> · <span id="stickyName">Sarah</span></p>
+  <button type="button" class="sticky__btn" id="stickyBuy"><span data-t="sticky">Buy</span> · <b class="js-total">€89</b></button>
+</div>
+
+<!-- le panier : le décor continue -->
+<div class="cart" id="cart" aria-hidden="true">
+  <div class="cart__veil" id="cartVeil"></div>
+  <aside class="cart__panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle" id="cartPanel">
+    <header class="cart__head">
+      <h2 id="cartTitle" data-t="cart.title">Your prism awaits.</h2>
+      <button type="button" class="cart__x" id="cartClose" data-t-aria="cart.close" aria-label="Close">×</button>
+    </header>
+    <div class="cart__body" id="cartBody">
+      <div class="cart__show" id="cartShow">
+        <div class="cart__scene">
+          <img class="cart__bg" src="media/web/prisme-full.jpg?v=1" alt="">
+          <div class="cart__bottle"><img id="cartBottleImg" src="media/web/prisme-flacon.webp?v=2" alt="">
+            <svg viewBox="0 0 603 643" preserveAspectRatio="none" aria-hidden="true"><text class="c-name" id="cName" x="304" y="331" fill="rgba(110,10,60,.4)"></text><text class="c-name" id="cName2" x="303" y="330" fill="#fff8f2" stroke="rgba(255,226,170,.9)" stroke-width=".7"></text><text class="e-num" id="cNum" x="303" y="372" fill="rgba(255,246,236,.92)"></text></svg>
+          </div>
+        </div>
+      </div>
+      <ul class="cart__lines" id="cartLines"></ul>
+      <div class="cart__empty" id="cartEmpty" hidden><p data-t="cart.empty">Your bag is empty.</p><button type="button" class="buy buy--small" id="cartBack"><span data-t="cart.back">Choose a name</span></button></div>
+      <div id="cartFull">
+        <label class="field field--msg"><span data-t="msg.label">A note in the gift box (optional)</span>
+          <textarea id="giftMsg" maxlength="140" rows="2" data-t-ph="msg.ph" placeholder="Happy birthday, my Sarah…"></textarea></label>
+        <fieldset class="shipopt"><legend data-t="ship.legend">Delivery</legend>
+          <label><input type="radio" name="ship" value="std" checked><span><b data-t="ship.std">Standard 48 h</b><em data-t="ship.free">Free</em></span></label>
+          <label><input type="radio" name="ship" value="exp"><span><b data-t="ship.exp">Express 24 h</b><em id="expPrice">€9.90</em></span></label>
+        </fieldset>
+        <p class="cart__gift" data-t="cart.gift">Gift box and a 2 ml sample included</p>
+        <dl class="sum">
+          <div><dt data-t="sum.sub">Subtotal</dt><dd id="sumSub">€89</dd></div>
+          <div><dt data-t="sum.ship">Delivery</dt><dd id="sumShip">Free</dd></div>
+          <div class="sum__t"><dt data-t="sum.total">Total incl. VAT</dt><dd id="sumTotal">€89</dd></div>
+        </dl>
+        <div class="pay">
+          <p class="pay__h" data-t="pay.express">Pay in one tap</p>
+          <div id="gpay" class="pay__g"></div>
+          <button type="button" class="pay__apple" id="applePay" hidden aria-label="Apple Pay"></button>
+          <button type="button" class="pay__fallback" id="payFallback" hidden><span data-t="pay.fallback">Pay now</span> · <b class="js-grand">€89</b></button>
+          <button type="button" class="pay__card" id="payCard" data-t="pay.card">Pay by bank card</button>
+          <p class="pay__note" data-t="pay.note">Test mode: nothing is charged.</p>
+          <p class="pay__cgv" data-t="pay.cgv"></p>
+        </div>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<!-- pages légales -->
+<dialog class="legal" id="legal" aria-labelledby="legalTitle">
+  <div class="legal__in">
+    <button type="button" class="cart__x" id="legalClose" data-t-aria="cart.close" aria-label="Close">×</button>
+    <p class="legal__demo" data-t="legal.demo">Sample document: demo shop, fictional company.</p>
+    <h2 id="legalTitle"></h2>
+    <div id="legalBody"></div>
+  </div>
+</dialog>
+
+<!-- confirmation après le paiement de test -->
+<div class="done" id="done" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="done__card">
+    <p class="eyebrow" data-t="done.eyebrow">Order confirmed · test mode</p>
+    <h2 class="done__title"><span data-t="done.title">Bottle n°</span> <b id="doneNum">0348</b></h2>
+    <p class="done__name" id="doneName">Sarah</p>
+    <p data-t="done.text">Engraved today, in its gift box tomorrow. Demo shop: nothing was charged.</p>
+    <button type="button" class="pay__fallback" id="doneClose" data-t="done.close">Back to the bottle</button>
+  </div>
+</div>
+
+<!-- cookies -->
+<div class="cookie" id="cookie" hidden role="region" aria-label="Cookies">
+  <p data-t="ck.text"></p>
+  <div class="cookie__b">
+    <button type="button" class="cookie__btn" data-ck="refuse" data-t="ck.refuse">Refuse</button>
+    <button type="button" class="cookie__btn" data-ck="accept" data-t="ck.accept">Accept</button>
+    <a href="#" data-legal="cookies" data-t="ck.more">Learn more</a>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<noscript><p class="noscript">This website needs JavaScript. · Ce site a besoin de JavaScript.</p></noscript>
+</body>
+</html>

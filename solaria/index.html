@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Solaria · Twelve villas facing the sunset</title>
+<meta name="description" content="Solaria: twelve contemporary villas with infinity pools, on a hillside above the sea. Fictional program, demo website.">
+<meta name="theme-color" content="#000000">
+<!-- sécurité : tout vient de ce site (three.js est copié dans vendor/), aucun script extérieur -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-hkzRjflwL67QuBNHfcX51SOxPQzPEfwGduwXdxJWLPQ='; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: blob:; media-src 'self'; connect-src 'self' https://visites.lagon-stats.workers.dev; worker-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="fonts/polices.css">
+<link rel="stylesheet" href="style.css?v=2611i">
+<script type="importmap">
+{ "imports": {
+  "three": "./vendor/three/three.module.js",
+  "three/addons/": "./vendor/three/addons/"
+} }
+</script>
+<script type="module" src="main.js?v=2611i"></script>
+<script src="/m.js?v=2" defer></script>
+</head>
+<body class="is-loading">
+
+<div class="films" aria-hidden="true">
+  <video class="film" data-film="hero" muted playsinline loop preload="auto" poster="media/web/hero.jpg"
+    data-src="media/web/hero.mp4" data-src-m="media/web/hero-v.mp4" data-poster-m="media/web/hero-v.jpg"></video>
+  <video class="film" data-film="place" muted playsinline loop preload="none" poster="media/web/place.jpg" data-src="media/web/place.mp4" data-src-m="media/web/place-m.mp4"></video>
+  <video class="film" data-film="architecture" muted playsinline loop preload="none" poster="media/web/architecture.jpg" data-src="media/web/architecture.mp4" data-src-m="media/web/architecture-m.mp4"></video>
+  <video class="film" data-film="inside" muted playsinline loop preload="none" poster="media/web/tour.jpg" data-src="media/web/tour.mp4" data-src-m="media/web/tour-m.mp4"></video>
+  <video class="film" data-film="evening" muted playsinline loop preload="none" poster="media/web/evening.jpg" data-src="media/web/evening.mp4" data-src-m="media/web/evening-m.mp4"></video>
+  <video class="film" data-film="visit" muted playsinline loop preload="none" poster="media/web/visit.jpg" data-src="media/web/visit.mp4" data-src-m="media/web/visit-m.mp4"></video>
+</div>
+<div class="layer mp" id="mp" aria-hidden="true"><div class="mp__in" id="mpIn"><img src="media/web/masterplan.jpg" alt="" id="mpImg"><div class="mp__pins" id="pins"></div></div></div>
+<canvas id="mats" class="layer" aria-hidden="true"></canvas>
+<div class="layer plan" id="plan"><div class="plan__bg"></div><div class="plan__box" id="planBox"><div class="plan__svg" id="planSvg"></div><div class="plan__bar" id="planBar"><button type="button" data-floor="0">Ground floor</button><button type="button" data-floor="1">Upper floor</button><button type="button" class="plan__zoom" id="planZoom" aria-expanded="false">Enlarge the plan</button></div></div></div>
+<div class="grade" aria-hidden="true"></div>
+<div class="mat-labels" id="matLabels" aria-hidden="true"></div>
+<div class="tip" id="tip" aria-hidden="true"></div>
+
+<div class="loader" aria-hidden="true">
+  <p class="loader__name">SOLARIA</p>
+  <div class="loader__bar"><i id="loadBar"></i></div>
+</div>
+
+<header class="nav">
+  <a class="nav__logo" href="#top" data-go="0" aria-label="Solaria">SOLARIA<small data-t="nav.sub">Villas · Fictional program</small></a>
+  <div class="nav__right">
+    <div class="lang" role="group" aria-label="Language" data-ta="lang">
+      <button type="button" data-lang="fr" aria-pressed="false" lang="fr">FR</button>
+      <button type="button" data-lang="en" aria-pressed="true" lang="en">EN</button>
+    </div>
+    <button class="btn btn--gold btn--sm" type="button" data-book data-t="nav.book">Book a visit</button>
+  </div>
+</header>
+
+<nav class="steps" aria-label="Steps" id="dots"></nav>
+<button class="next" id="next" type="button"><span id="nextLabel">Discover</span><i aria-hidden="true">↓</i></button>
+
+<main id="top">
+  <section class="beat beat--hero" data-step="hero" aria-hidden="true">
+    <div class="cap cap--hero">
+      <p class="eyebrow ln"><span data-t="hero.eyebrow">New program · Delivery 2028</span></p>
+      <h1 class="h1"><span class="ln"><span data-t="hero.l1">Twelve villas</span></span><span class="ln"><span data-t="hero.l2"><em>facing the sunset.</em></span></span></h1>
+      <p class="facts ln"><span><b data-t="hero.f1">12 villas</b><b id="fromPrice">from €1.45M</b><b data-t="hero.f3">Infinity pool each</b></span></p>
+      <p class="cta ln"><span>
+        <button class="btn btn--gold" type="button" data-go="5" data-t="hero.choose">Choose my villa</button>
+        <button class="btn btn--ghost" type="button" data-go="1" data-t="hero.discover">Discover the estate</button>
+      </span></p>
+    </div>
+  </section>
+
+  <section class="beat" data-step="place" aria-hidden="true">
+    <div class="cap card">
+      <p class="eyebrow ln"><span data-t="place.eyebrow">01 · The site</span></p>
+      <h2 class="h2"><span class="ln"><span data-t="place.l1">On a hillside</span></span><span class="ln"><span data-t="place.l2"><em>above the sea.</em></span></span></h2>
+      <p class="lead ln"><span data-t="place.lead">A private estate of three hectares, built in terraces so that every villa sees the horizon. The beach is a 4-minute walk below.</span></p>
+      <p class="facts ln"><span><b data-t="place.f1">3 hectares</b><b data-t="place.f2">100% sea view</b><b data-t="place.f3">Beach 300 m</b></span></p>
+    </div>
+  </section>
+
+  <section class="beat" data-step="architecture" aria-hidden="true">
+    <div class="cap card">
+      <p class="eyebrow ln"><span data-t="arch.eyebrow">02 · Architecture</span></p>
+      <h2 class="h2"><span class="ln"><span data-t="arch.l1">White stone,</span></span><span class="ln"><span data-t="arch.l2"><em>glass and water.</em></span></span></h2>
+      <p class="lead ln"><span data-t="arch.lead">Two floors, a cantilevered upper level and an infinity pool that ends exactly where the sea begins.</span></p>
+    </div>
+  </section>
+
+  <section class="beat" data-step="inside" aria-hidden="true">
+    <div class="cap card">
+      <p class="eyebrow ln"><span data-t="inside.eyebrow">03 · Interiors</span></p>
+      <h2 class="h2"><span class="ln"><span data-t="inside.l1">The tour,</span></span><span class="ln"><span data-t="inside.l2"><em>room by room.</em></span></span></h2>
+      <div class="room ln" id="room"><span><i class="room__count" id="roomCount">01 / 08</i><b class="room__name" id="roomName">Entrance</b><small class="room__line" id="roomLine">Solid-wood pivot door, stone façade.</small><span class="room__bar"><i id="roomBar"></i></span></span></div>
+      <p class="rooms ln"><span id="roomChips"></span></p>
+    </div>
+  </section>
+
+  <section class="beat" data-step="materials" aria-hidden="true">
+    <div class="cap card cap--side">
+      <p class="eyebrow ln"><span data-t="mat.eyebrow">04 · Materials</span></p>
+      <h2 class="h2"><span class="ln"><span data-t="mat.l1">Only noble</span></span><span class="ln"><span data-t="mat.l2"><em>materials.</em></span></span></h2>
+      <p class="lead ln"><span data-t="mat.lead">Calacatta marble floors, travertine terraces, solid oak and brushed brass. Every sample can be touched in the show villa.</span></p>
+    </div>
+  </section>
+
+  <section class="beat" data-step="choose" aria-hidden="true">
+    <div class="cap card cap--side">
+      <p class="eyebrow ln"><span data-t="choose.eyebrow">05 · Availability</span></p>
+      <h2 class="h2"><span class="ln"><span data-t="choose.l1">Choose</span></span><span class="ln"><span data-t="choose.l2"><em>your villa.</em></span></span></h2>
+      <p class="lead ln"><span data-t="choose.lead">Each point is a villa. Hover it for its price, click it to open its plan.</span></p>
+      <p class="legend ln"><span>
+        <i class="st st--free"></i><b id="nFree">6</b> <span data-t="st.free">available</span>
+        <i class="st st--hold"></i><b id="nHold">3</b> <span data-t="st.hold">reserved</span>
+        <i class="st st--sold"></i><b id="nSold">3</b> <span data-t="st.sold">sold</span>
+      </span></p>
+    </div>
+  </section>
+
+  <section class="beat" data-step="villa" aria-hidden="true">
+    <div class="cap card cap--side">
+      <p class="eyebrow ln"><span id="vEyebrow">06 · Villa 06</span></p>
+      <h2 class="h2"><span class="ln"><span id="vTitle">Villa 07</span></span><span class="ln"><span><em id="vSub">4 bedrooms</em></span></span></h2>
+      <ul class="specs ln"><span id="vSpecs"></span></ul>
+      <p class="floors ln"><span id="planTabs" role="group"><button type="button" data-floor="0" aria-pressed="true">Ground floor</button><button type="button" data-floor="1" aria-pressed="false">Upper floor</button></span></p>
+      <p class="price ln"><span><b id="vPrice">€1,980,000</b><i id="vStatus" class="badge">Available</i></span></p>
+      <p class="cta ln"><span>
+        <button class="btn btn--gold" type="button" data-book data-t="villa.book">Book a visit</button>
+        <button class="btn btn--ghost" type="button" data-go="5" data-t="villa.back">Back to the map</button>
+      </span></p>
+    </div>
+  </section>
+
+  <section class="beat" data-step="evening" aria-hidden="true">
+    <div class="cap card cap--side">
+      <p class="eyebrow ln"><span data-t="eve.eyebrow">07 · Evenings</span></p>
+      <h2 class="h2"><span class="ln"><span data-t="eve.l1">Night falls,</span></span><span class="ln"><span data-t="eve.l2"><em>the villa lights up.</em></span></span></h2>
+      <div class="room ln" id="eveNow"><span><i class="room__count" id="eveCount">01 / 03</i><b class="room__name" id="eveName">The lights come on</b><small class="room__line" id="eveLine">Warm lamps behind the tall windows, at nightfall.</small><span class="room__bar"><i id="eveBar"></i></span></span></div>
+      <p class="rooms ln"><span id="eveChips"></span></p>
+    </div>
+  </section>
+
+  <section class="beat" data-step="visit" aria-hidden="true">
+    <div class="cap card">
+      <p class="eyebrow ln"><span data-t="visit.eyebrow">08 · Visit</span></p>
+      <h2 class="h2"><span class="ln"><span data-t="visit.l1">Come and see</span></span><span class="ln"><span data-t="visit.l2"><em>the show villa.</em></span></span></h2>
+      <p class="lead ln"><span data-t="visit.lead">Private visits every day, by appointment. The brochure has every plan, every view and every price.</span></p>
+      <p class="cta ln"><span>
+        <button class="btn btn--gold" type="button" data-book data-t="visit.book">Book a private visit</button>
+        <button class="btn btn--ghost" type="button" data-brochure data-t="visit.brochure">Download the brochure</button>
+      </span></p>
+      <p class="fine ln"><span data-t="visit.fine">Solaria is a fictional program with sample prices, created as a demo website by <a href="https://masquo.com">Masquo</a>: websites for real-estate developers and architects. Videos: Pexels. Materials in real-time 3D. IP address, approximate location (country, region, city), internet provider, page visited, source, browser and language are kept for 30 days, for security and statistics.</span></p>
+    </div>
+  </section>
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<noscript><p class="noscript">This website needs JavaScript. · Ce site a besoin de JavaScript.</p></noscript>
+</body>
+</html>

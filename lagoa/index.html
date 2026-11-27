@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+
+<html class="js" data-alt="fr/" data-lang="en" lang="en">
+<head>
+<meta content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://visites.lagon-stats.workers.dev; media-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests" http-equiv="Content-Security-Policy"/><meta content="strict-origin-when-cross-origin" name="referrer"/><meta content="noindex" name="robots"/><meta charset="utf-8"/>
+
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="#7B3CF0" name="theme-color"/>
+<title>LAGOA
+</title>
+
+
+
+
+
+
+<style>
+  @font-face {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("assets/fonts/playfairdisplay_n4.9980f3e16959dc89137cc1369bfc3ae98af1deb9.woff2") format("woff2"),
+       url("assets/fonts/playfairdisplay_n4.c562b7c8e5637886a811d2a017f9e023166064ee.woff") format("woff");
+}
+
+  @font-face {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("assets/fonts/playfairdisplay_i4.804ea8da9192aaed0368534aa085b3c1f3411619.woff2") format("woff2"),
+       url("assets/fonts/playfairdisplay_i4.5538cb7a825d13d8a2333cd8a94065a93a95c710.woff") format("woff");
+}
+
+  @font-face {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("assets/fonts/playfairdisplay_n7.592b3435e0fff3f50b26d410c73ae7ec893f6910.woff2") format("woff2"),
+       url("assets/fonts/playfairdisplay_n7.998b1417dec711058cce2abb61a0b8c59066498f.woff") format("woff");
+}
+
+  @font-face {
+  font-family: Jost;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("assets/fonts/jost_n4.d47a1b6347ce4a4c9f437608011273009d91f2b7.woff2") format("woff2"),
+       url("assets/fonts/jost_n4.791c46290e672b3f85c3d1c651ef2efa3819eadd.woff") format("woff");
+}
+
+  @font-face {
+  font-family: Jost;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("assets/fonts/jost_n5.7c8497861ffd15f4e1284cd221f14658b0e95d61.woff2") format("woff2"),
+       url("assets/fonts/jost_n5.fb6a06896db583cc2df5ba1b30d9c04383119dd9.woff") format("woff");
+}
+
+  @font-face {
+  font-family: Jost;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("assets/fonts/jost_n7.921dc18c13fa0b0c94c5e2517ffe06139c3615a3.woff2") format("woff2"),
+       url("assets/fonts/jost_n7.cbfc16c98c1e195f46c536e775e4e959c5f2f22b.woff") format("woff");
+}
+
+  @font-face {
+  font-family: "Pinyon Script";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("assets/fonts/pinyonscript_n4.d5cdaa582aa86df1f76ad2002864c37d1f357b0a.woff2") format("woff2"),
+       url("assets/fonts/pinyonscript_n4.2c85807ad691f4dfea1ae3c4ea85285d0391c6ce.woff") format("woff");
+}
+
+
+  :root {
+    --c-bg: #35D3CC;
+    --c-bg-2: #0FA3BC;
+    --c-surface: #FFFFFF;
+    --c-text: #2A0F3D;
+    --c-text-soft: #5A3A6C;
+    --c-accent: #7B3CF0;
+    --c-accent-2: #E0247F;
+    --c-accent-3: #4B1FA8;
+    --c-highlight: #F6C453;
+    --c-btn-a: #6A2BD6;
+    --c-btn-b: #D42A86;
+    --c-btn-text: #FFFFFF;
+    --c-foot-bg: #1E0B36;
+    --c-foot-text: #F6E9FF;
+    --c-accent-rgb: 123, 60, 240;
+    --c-text-rgb: 42, 15, 61;
+
+    --font-h: "Playfair Display", serif;
+    --font-h-style: normal;
+    --font-h-weight: 400;
+    --font-b: Jost, sans-serif;
+    --font-b-style: normal;
+    --font-b-weight: 400;
+    --font-s: "Pinyon Script", cursive;
+    --h-scale: 1.0;
+
+    --page: 1180px;
+    --r: 24px;
+  }
+</style>
+<link href="assets/theme.css" media="all" rel="stylesheet" type="text/css"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="assets/lang.js"></script><script defer="defer" src="assets/demo-data-en.js"></script><script defer="defer" src="assets/lagoa-demo.js"></script><script defer="defer" src="assets/theme.js"></script><link href="assets/lagoa-demo.css" rel="stylesheet"/><link href="https://masquo.com/lagoa/" rel="canonical"/><script src="/m.js?v=2" defer></script>
+</head>
+<body class="template-index">
+<a class="skip-link" href="#MainContent">Skip to content</a>
+
+<div class="shopify-section shopify-section-group-header-group section-announce" id="shopify-section-sections--30216263172422__announcement"><div class="announce announce--scroll" style="--speed: 40s"><div class="announce__track"><ul class="announce__list"><li>1 pair bought = 1 pair free</li><li>Free delivery from €49</li><li>UV400 protection on every pair</li><li>30 days to change your mind</li></ul><ul aria-hidden="true" class="announce__list"><li>1 pair bought = 1 pair free</li><li>Free delivery from €49</li><li>UV400 protection on every pair</li><li>30 days to change your mind</li></ul></div></div>
+</div><div class="shopify-section shopify-section-group-header-group section-header" id="shopify-section-sections--30216263172422__header"><sticky-header class="nav nav--over is-over" data-transparent="true">
+<div class="nav__in">
+<details class="mnav" data-mnav="">
+<summary aria-label="Menu" class="nav__btn mnav__open"><svg aria-hidden="true" class="icon" focusable="false" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path></svg></summary>
+<div class="mnav__panel">
+<div class="mnav__head">
+<span class="logo logo--text">LAGOA</span>
+<button aria-label="Close" class="nav__btn" data-mnav-close="" type="button"><svg aria-hidden="true" class="icon" focusable="false" viewbox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></button>
+</div>
+<nav aria-label="Menu">
+<ul class="mnav__list"><li>
+<a aria-current="page" href="./">Home</a></li><li>
+<a href="collections/lunettes/">Catalog</a></li></ul>
+</nav><div aria-label="Language" class="lang" role="group"><a aria-pressed="false" data-lang-set="fr" href="fr/" hreflang="fr" lang="fr">FR</a><a aria-pressed="true" data-lang-set="en" href="./" hreflang="en" lang="en">EN</a></div>
+</div>
+</details>
+<a class="logo" href="./" style="--logo-w: 130px"><span class="logo--text">LAGOA</span></a>
+<nav aria-label="Menu" class="menu">
+<ul><li>
+<a aria-current="page" href="./">Home</a></li><li>
+<a href="collections/lunettes/">Catalog</a></li></ul>
+</nav>
+<div class="nav__right"><div class="nav__loc"><div aria-label="Language" class="lang" role="group"><a aria-pressed="false" data-lang-set="fr" href="fr/" hreflang="fr" lang="fr">FR</a><a aria-pressed="true" data-lang-set="en" href="./" hreflang="en" lang="en">EN</a></div></div>
+<a aria-label="Bag" class="nav__btn bag" data-cart-open="" href="#cart" id="cart-icon-bubble"><svg aria-hidden="true" class="icon" focusable="false" viewbox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.7"></path><path d="M9 8V6.5a3 3 0 0 1 6 0V8" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg><span class="visually-hidden">0 items in your bag</span>
+</a>
+</div>
+</div>
+</sticky-header>
+</div>
+
+<main class="main" id="MainContent" role="main" tabindex="-1">
+<div class="shopify-section section-hero-lens" id="shopify-section-template--30216265597254__hero"><hero-lens class="hero hero--lens" data-auto="true" style="--pair-w: 84vw; --pair-x: 50%; --pair-y: 50%; --ratio: 2.4806; --mask: url('img/lagoa-lens-mask-1-w2400.png'); --lxl: 26%; --lxr: 74%; --ly: 50%; --ld: 0.28; --t1: #3E7BFF; --t2: #FF6FA0; --tint-strength: 0.9;">
+<div aria-hidden="true" class="lens__decor" data-decor="">
+<picture><source media="(max-width: 900px)" srcset="assets/lagoa-decor-tall.jpg"/><img alt="" class="lens__decor-img" fetchpriority="high" height="941" src="assets/lagoa-decor.jpg" width="1672"/></picture>
+</div><div aria-hidden="true" class="lens__glints"><i></i><i></i><i></i><i></i><i></i><i></i></div><div aria-hidden="true" class="lens__shade"></div>
+<div class="lens__pair">
+<div aria-hidden="true" class="lens__shadow"></div>
+<div aria-hidden="true" class="lens__tint"></div>
+<div aria-hidden="true" class="lens__dark"></div>
+<div aria-hidden="true" class="lens__glare"><i></i></div>
+<img alt="" class="lens__frame" data-fly="" height="645" src="assets/img/lagoa-frame-1-w2400.webp" width="1600"/>
+<div class="lens__in lens__in--l"><div class="lens__say" data-say="0">
+<p class="lens__eyebrow">Lenses · UV400</p>
+<p class="lens__title"><em>Blue to pink gradient</em></p>
+</div><div class="lens__say" data-say="1" hidden="">
+<p class="lens__eyebrow">Lenses · UV400</p>
+<p class="lens__title"><em>Honey amber gradient</em></p>
+</div><div class="lens__say" data-say="2" hidden="">
+<p class="lens__eyebrow">Lenses · UV400</p>
+<p class="lens__title"><em>Blue mirror</em></p>
+</div><div class="lens__say" data-say="3" hidden="">
+<p class="lens__eyebrow">Lenses · UV400</p>
+<p class="lens__title"><em>Ocean blue gradient</em></p>
+</div><div class="lens__say" data-say="4" hidden="">
+<p class="lens__eyebrow">Lenses · UV400</p>
+<p class="lens__title"><em>Soft lavender</em></p>
+</div></div>
+<div class="lens__in lens__in--r"><div class="lens__buy" data-buy="0"><product-form class="pform" data-fly-source="[data-fly]" data-scope="hero-lens"><form accept-charset="UTF-8" action="#cart" class="pform__form" enctype="multipart/form-data" id="LensForm-template--30216265597254__hero-1" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964977848646"/><span class="lens__ptype">Original</span><a class="lens__pname" href="products/moorea/">MOOREA</a>
+<div class="pform__price" data-price-wrap=""><div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+<button class="btn-dream" data-add="" name="add" type="submit">
+<span data-add-label="" data-label="Add to bag">Add to bag</span>
+<i aria-hidden="true" class="btn-dream__shine"></i>
+</button><p class="pform__error" data-error="" hidden=""></p><input name="product-id" type="hidden" value="15873585807686"/><input name="section-id" type="hidden" value="template--30216265597254__hero"/></form></product-form></div><div class="lens__buy" data-buy="1" hidden=""><product-form class="pform" data-fly-source="[data-fly]" data-scope="hero-lens"><form accept-charset="UTF-8" action="#cart" class="pform__form" enctype="multipart/form-data" id="LensForm-template--30216265597254__hero-2" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964977881414"/><span class="lens__ptype">Original</span><a class="lens__pname" href="products/tulum/">TULUM</a>
+<div class="pform__price" data-price-wrap=""><div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+<button class="btn-dream" data-add="" name="add" type="submit">
+<span data-add-label="" data-label="Add to bag">Add to bag</span>
+<i aria-hidden="true" class="btn-dream__shine"></i>
+</button><p class="pform__error" data-error="" hidden=""></p><input name="product-id" type="hidden" value="15873585840454"/><input name="section-id" type="hidden" value="template--30216265597254__hero"/></form></product-form></div><div class="lens__buy" data-buy="2" hidden=""><product-form class="pform" data-fly-source="[data-fly]" data-scope="hero-lens"><form accept-charset="UTF-8" action="#cart" class="pform__form" enctype="multipart/form-data" id="LensForm-template--30216265597254__hero-3" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964978274630"/><span class="lens__ptype">Signature</span><a class="lens__pname" href="products/palawan/">PALAWAN</a>
+<div class="pform__price" data-price-wrap=""><div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+<button class="btn-dream" data-add="" name="add" type="submit">
+<span data-add-label="" data-label="Add to bag">Add to bag</span>
+<i aria-hidden="true" class="btn-dream__shine"></i>
+</button><p class="pform__error" data-error="" hidden=""></p><input name="product-id" type="hidden" value="15873586233670"/><input name="section-id" type="hidden" value="template--30216265597254__hero"/></form></product-form></div><div class="lens__buy" data-buy="3" hidden=""><product-form class="pform" data-fly-source="[data-fly]" data-scope="hero-lens"><form accept-charset="UTF-8" action="#cart" class="pform__form" enctype="multipart/form-data" id="LensForm-template--30216265597254__hero-4" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964990300486"/><span class="lens__ptype">Essentiel</span><a class="lens__pname" href="products/grenada/">GRENADA</a>
+<div class="pform__price" data-price-wrap=""><div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+<button class="btn-dream" data-add="" name="add" type="submit">
+<span data-add-label="" data-label="Add to bag">Add to bag</span>
+<i aria-hidden="true" class="btn-dream__shine"></i>
+</button><p class="pform__error" data-error="" hidden=""></p><input name="product-id" type="hidden" value="15873589444934"/><input name="section-id" type="hidden" value="template--30216265597254__hero"/></form></product-form></div><div class="lens__buy" data-buy="4" hidden=""><product-form class="pform" data-fly-source="[data-fly]" data-scope="hero-lens"><form accept-charset="UTF-8" action="#cart" class="pform__form" enctype="multipart/form-data" id="LensForm-template--30216265597254__hero-5" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964978012486"/><span class="lens__ptype">Original</span><a class="lens__pname" href="products/bora/">BORA</a>
+<div class="pform__price" data-price-wrap=""><div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+<button class="btn-dream" data-add="" name="add" type="submit">
+<span data-add-label="" data-label="Add to bag">Add to bag</span>
+<i aria-hidden="true" class="btn-dream__shine"></i>
+</button><p class="pform__error" data-error="" hidden=""></p><input name="product-id" type="hidden" value="15873585971526"/><input name="section-id" type="hidden" value="template--30216265597254__hero"/></form></product-form></div></div>
+</div>
+<div class="lens__under"><div aria-label="Lens tint" class="lens__tints" role="radiogroup"><button aria-checked="true" aria-label="Show the MOOREA tint" class="lens__dot" data-frame="assets/img/lagoa-frame-1-w2400.webp" data-index="0" data-mask="assets/img/lagoa-lens-mask-1-w2400.png" data-t1="#3E7BFF" data-t2="#FF6FA0" data-tint="" role="radio" style="--a: #3E7BFF; --b: #FF6FA0; --d: 0" type="button">
+<span class="lens__dot-img"><img alt="" height="90" loading="lazy" src="assets/img/01-moorea-w180.jpg" srcset="assets/img/01-moorea-w90.jpg 90w" width="90"/>
+</span>
+<span class="lens__dot-name">MOOREA</span>
+</button><button aria-checked="false" aria-label="Show the TULUM tint" class="lens__dot" data-frame="assets/img/lagoa-frame-2-w2400.webp" data-index="1" data-mask="assets/img/lagoa-lens-mask-2-w2400.png" data-t1="#E08A1E" data-t2="#B8560F" data-tint="" role="radio" style="--a: #E08A1E; --b: #B8560F; --d: 1" type="button">
+<span class="lens__dot-img"><img alt="" height="90" loading="lazy" src="assets/img/02-tulum-w180.jpg" srcset="assets/img/02-tulum-w90.jpg 90w" width="90"/>
+</span>
+<span class="lens__dot-name">TULUM</span>
+</button><button aria-checked="false" aria-label="Show the PALAWAN tint" class="lens__dot" data-frame="assets/img/lagoa-frame-3-w2400.webp" data-index="2" data-mask="assets/img/lagoa-lens-mask-3-w2400.png" data-t1="#1E6CFF" data-t2="#18C2E8" data-tint="" role="radio" style="--a: #1E6CFF; --b: #18C2E8; --d: 2" type="button">
+<span class="lens__dot-img"><img alt="" height="90" loading="lazy" src="assets/img/10-palawan-w180.jpg" srcset="assets/img/10-palawan-w90.jpg 90w" width="90"/>
+</span>
+<span class="lens__dot-name">PALAWAN</span>
+</button><button aria-checked="false" aria-label="Show the GRENADA tint" class="lens__dot" data-frame="assets/img/lagoa-frame-4-w2400.webp" data-index="3" data-mask="assets/img/lagoa-lens-mask-4-w2400.png" data-t1="#1F4FBF" data-t2="#6FB6FF" data-tint="" role="radio" style="--a: #1F4FBF; --b: #6FB6FF; --d: 3" type="button">
+<span class="lens__dot-img"><img alt="" height="90" loading="lazy" src="assets/img/19-grenada-w180.jpg" srcset="assets/img/19-grenada-w90.jpg 90w" width="90"/>
+</span>
+<span class="lens__dot-name">GRENADA</span>
+</button><button aria-checked="false" aria-label="Show the BORA tint" class="lens__dot" data-frame="assets/img/lagoa-frame-5-w2400.webp" data-index="4" data-mask="assets/img/lagoa-lens-mask-5-w2400.png" data-t1="#9C7BFF" data-t2="#C79BFF" data-tint="" role="radio" style="--a: #9C7BFF; --b: #C79BFF; --d: 4" type="button">
+<span class="lens__dot-img"><img alt="" height="90" loading="lazy" src="assets/img/05-bora-w180.jpg" srcset="assets/img/05-bora-w90.jpg 90w" width="90"/>
+</span>
+<span class="lens__dot-name">BORA</span>
+</button></div><h1 class="visually-hidden">See life in turquoise.</h1>
+<p class="lens__line"><span class="lens__slogan">See life <em>in turquoise.</em></span> Pick a tint: the lagoon changes colour through the lenses, live. <a href="collections/lunettes/">See the collection</a></p><button class="btn-dream lens__mbtn" data-mbtn="" form="LensForm-template--30216265597254__hero-1" type="submit">
+<span>Add to bag</span><i aria-hidden="true" class="btn-dream__shine"></i>
+</button></div>
+</hero-lens>
+<span id="MainContent-after-hero"></span>
+</div><div class="shopify-section section-steps" id="shopify-section-template--30216265597254__steps"><section class="steps-sec">
+<ol class="wrap steps" style="--cols: 4"><li><b>1</b><span>Choose your pairs</span></li><li><b>2</b><span>The second one is free</span></li><li><b>3</b><span>Pay in one tap</span></li><li><b>4</b><span>Delivered in 48 h</span></li></ol>
+</section>
+</div><div class="shopify-section section-tabs" id="shopify-section-template--30216265597254__tabs"><section class="block-pad tabsec" data-section="template--30216265597254__tabs">
+<div class="wrap">
+<div class="fcol__head tabsec__head">
+<div><h2 class="h2">Our must-haves</h2>
+</div>
+<collection-tabs aria-label="Our must-haves" class="tabsec__tabs" role="tablist"><button aria-controls="Tab-template--30216265597254__tabs-all" aria-selected="true" class="tabsec__tab" data-tab="all" role="tab" type="button">
+            All<small>24</small>
+</button><button aria-controls="Tab-template--30216265597254__tabs-tab1" aria-selected="false" class="tabsec__tab" data-tab="tab1" role="tab" type="button">
+              Original<small>8</small>
+</button><button aria-controls="Tab-template--30216265597254__tabs-tab2" aria-selected="false" class="tabsec__tab" data-tab="tab2" role="tab" type="button">
+              Signature<small>8</small>
+</button><button aria-controls="Tab-template--30216265597254__tabs-tab3" aria-selected="false" class="tabsec__tab" data-tab="tab3" role="tab" type="button">
+              Essentiel<small>8</small>
+</button><i aria-hidden="true" class="tabsec__ink"></i>
+</collection-tabs>
+</div><div class="grid tabsec__panel is-active" data-panel="all" id="Tab-template--30216265597254__tabs-all" role="tabpanel" style="--cols: 4"><article class="pcard reveal" style="--i: 0">
+<a class="pcard__link" href="products/moorea/">
+<div class="pcard__media has-second" data-card-img=""><img alt="MOOREA" class="pcard__img" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/01-moorea-w900.jpg" srcset="assets/img/01-moorea-w300.jpg 300w, assets/img/01-moorea-w450.jpg 450w, assets/img/01-moorea-w600.jpg 600w, assets/img/01-moorea-w900.jpg 900w" width="900"/>
+<img alt="" class="pcard__img pcard__img--2" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/01-moorea-face-w900.jpg" srcset="assets/img/01-moorea-face-w300.jpg 300w, assets/img/01-moorea-face-w450.jpg 450w, assets/img/01-moorea-face-w600.jpg 600w, assets/img/01-moorea-face-w900.jpg 900w" width="900"/>
+<i aria-hidden="true" class="pcard__glint"></i><span class="pcard__badge pcard__badge--sale">-€20</span></div>
+<div class="pcard__info"><p class="pcard__type">Original</p><h3 class="pcard__title">MOOREA</h3>
+<div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+</a><product-form class="pcard__quick" data-fly-source="[data-card-img]" data-scope=".pcard"><form accept-charset="UTF-8" action="#cart" class="pcard__form" enctype="multipart/form-data" id="product_form_15873585807686" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964977848646"/>
+<button aria-label="Add MOOREA to the bag" class="pcard__add" data-add="" name="add" type="submit">
+<svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+<span data-add-label="" data-label="Add">Add</span>
+</button><input name="product-id" type="hidden" value="15873585807686"/><input name="section-id" type="hidden" value="template--30216265597254__tabs"/></form></product-form></article>
+<article class="pcard reveal" style="--i: 1">
+<a class="pcard__link" href="products/aruba/">
+<div class="pcard__media has-second" data-card-img=""><img alt="ARUBA" class="pcard__img" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/09-aruba-w900.jpg" srcset="assets/img/09-aruba-w300.jpg 300w, assets/img/09-aruba-w450.jpg 450w, assets/img/09-aruba-w600.jpg 600w, assets/img/09-aruba-w900.jpg 900w" width="900"/>
+<img alt="" class="pcard__img pcard__img--2" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/09-aruba-face-w900.jpg" srcset="assets/img/09-aruba-face-w300.jpg 300w, assets/img/09-aruba-face-w450.jpg 450w, assets/img/09-aruba-face-w600.jpg 600w, assets/img/09-aruba-face-w900.jpg 900w" width="900"/>
+<i aria-hidden="true" class="pcard__glint"></i><span class="pcard__badge pcard__badge--sale">-€20</span></div>
+<div class="pcard__info"><p class="pcard__type">Signature</p><h3 class="pcard__title">ARUBA</h3>
+<div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+</a><product-form class="pcard__quick" data-fly-source="[data-card-img]" data-scope=".pcard"><form accept-charset="UTF-8" action="#cart" class="pcard__form" enctype="multipart/form-data" id="product_form_15873586200902" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964978241862"/>
+<button aria-label="Add ARUBA to the bag" class="pcard__add" data-add="" name="add" type="submit">
+<svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+<span data-add-label="" data-label="Add">Add</span>
+</button><input name="product-id" type="hidden" value="15873586200902"/><input name="section-id" type="hidden" value="template--30216265597254__tabs"/></form></product-form></article>
+<article class="pcard reveal" style="--i: 2">
+<a class="pcard__link" href="products/belize/">
+<div class="pcard__media has-second" data-card-img=""><img alt="BELIZE" class="pcard__img" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/17-belize-w900.jpg" srcset="assets/img/17-belize-w300.jpg 300w, assets/img/17-belize-w450.jpg 450w, assets/img/17-belize-w600.jpg 600w, assets/img/17-belize-w900.jpg 900w" width="900"/>
+<img alt="" class="pcard__img pcard__img--2" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/17-belize-face-w900.jpg" srcset="assets/img/17-belize-face-w300.jpg 300w, assets/img/17-belize-face-w450.jpg 450w, assets/img/17-belize-face-w600.jpg 600w, assets/img/17-belize-face-w900.jpg 900w" width="900"/>
+<i aria-hidden="true" class="pcard__glint"></i><span class="pcard__badge pcard__badge--sale">-€20</span></div>
+<div class="pcard__info"><p class="pcard__type">Essentiel</p><h3 class="pcard__title">BELIZE</h3>
+<div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+</a><product-form class="pcard__quick" data-fly-source="[data-card-img]" data-scope=".pcard"><form accept-charset="UTF-8" action="#cart" class="pcard__form" enctype="multipart/form-data" id="product_form_15873589313862" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964990169414"/>
+<button aria-label="Add BELIZE to the bag" class="pcard__add" data-add="" name="add" type="submit">
+<svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+<span data-add-label="" data-label="Add">Add</span>
+</button><input name="product-id" type="hidden" value="15873589313862"/><input name="section-id" type="hidden" value="template--30216265597254__tabs"/></form></product-form></article>
+<article class="pcard reveal" style="--i: 3">
+<a class="pcard__link" href="products/tulum/">
+<div class="pcard__media has-second" data-card-img=""><img alt="TULUM" class="pcard__img" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/02-tulum-w900.jpg" srcset="assets/img/02-tulum-w300.jpg 300w, assets/img/02-tulum-w450.jpg 450w, assets/img/02-tulum-w600.jpg 600w, assets/img/02-tulum-w900.jpg 900w" width="900"/>
+<img alt="" class="pcard__img pcard__img--2" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/02-tulum-face-w900.jpg" srcset="assets/img/02-tulum-face-w300.jpg 300w, assets/img/02-tulum-face-w450.jpg 450w, assets/img/02-tulum-face-w600.jpg 600w, assets/img/02-tulum-face-w900.jpg 900w" width="900"/>
+<i aria-hidden="true" class="pcard__glint"></i><span class="pcard__badge pcard__badge--sale">-€20</span></div>
+<div class="pcard__info"><p class="pcard__type">Original</p><h3 class="pcard__title">TULUM</h3>
+<div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+</a><product-form class="pcard__quick" data-fly-source="[data-card-img]" data-scope=".pcard"><form accept-charset="UTF-8" action="#cart" class="pcard__form" enctype="multipart/form-data" id="product_form_15873585840454" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964977881414"/>
+<button aria-label="Add TULUM to the bag" class="pcard__add" data-add="" name="add" type="submit">
+<svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+<span data-add-label="" data-label="Add">Add</span>
+</button><input name="product-id" type="hidden" value="15873585840454"/><input name="section-id" type="hidden" value="template--30216265597254__tabs"/></form></product-form></article>
+<article class="pcard reveal" style="--i: 4">
+<a class="pcard__link" href="products/palawan/">
+<div class="pcard__media has-second" data-card-img=""><img alt="PALAWAN" class="pcard__img" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/10-palawan-w900.jpg" srcset="assets/img/10-palawan-w300.jpg 300w, assets/img/10-palawan-w450.jpg 450w, assets/img/10-palawan-w600.jpg 600w, assets/img/10-palawan-w900.jpg 900w" width="900"/>
+<img alt="" class="pcard__img pcard__img--2" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/10-palawan-face-w900.jpg" srcset="assets/img/10-palawan-face-w300.jpg 300w, assets/img/10-palawan-face-w450.jpg 450w, assets/img/10-palawan-face-w600.jpg 600w, assets/img/10-palawan-face-w900.jpg 900w" width="900"/>
+<i aria-hidden="true" class="pcard__glint"></i><span class="pcard__badge pcard__badge--sale">-€20</span></div>
+<div class="pcard__info"><p class="pcard__type">Signature</p><h3 class="pcard__title">PALAWAN</h3>
+<div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+</a><product-form class="pcard__quick" data-fly-source="[data-card-img]" data-scope=".pcard"><form accept-charset="UTF-8" action="#cart" class="pcard__form" enctype="multipart/form-data" id="product_form_15873586233670" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964978274630"/>
+<button aria-label="Add PALAWAN to the bag" class="pcard__add" data-add="" name="add" type="submit">
+<svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+<span data-add-label="" data-label="Add">Add</span>
+</button><input name="product-id" type="hidden" value="15873586233670"/><input name="section-id" type="hidden" value="template--30216265597254__tabs"/></form></product-form></article>
+<article class="pcard reveal" style="--i: 5">
+<a class="pcard__link" href="products/antigua/">
+<div class="pcard__media has-second" data-card-img=""><img alt="ANTIGUA" class="pcard__img" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/18-antigua-w900.jpg" srcset="assets/img/18-antigua-w300.jpg 300w, assets/img/18-antigua-w450.jpg 450w, assets/img/18-antigua-w600.jpg 600w, assets/img/18-antigua-w900.jpg 900w" width="900"/>
+<img alt="" class="pcard__img pcard__img--2" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/18-antigua-face-w900.jpg" srcset="assets/img/18-antigua-face-w300.jpg 300w, assets/img/18-antigua-face-w450.jpg 450w, assets/img/18-antigua-face-w600.jpg 600w, assets/img/18-antigua-face-w900.jpg 900w" width="900"/>
+<i aria-hidden="true" class="pcard__glint"></i><span class="pcard__badge pcard__badge--sale">-€20</span></div>
+<div class="pcard__info"><p class="pcard__type">Essentiel</p><h3 class="pcard__title">ANTIGUA</h3>
+<div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+</a><product-form class="pcard__quick" data-fly-source="[data-card-img]" data-scope=".pcard"><form accept-charset="UTF-8" action="#cart" class="pcard__form" enctype="multipart/form-data" id="product_form_15873589379398" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964990234950"/>
+<button aria-label="Add ANTIGUA to the bag" class="pcard__add" data-add="" name="add" type="submit">
+<svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+<span data-add-label="" data-label="Add">Add</span>
+</button><input name="product-id" type="hidden" value="15873589379398"/><input name="section-id" type="hidden" value="template--30216265597254__tabs"/></form></product-form></article>
+<article class="pcard reveal" style="--i: 6">
+<a class="pcard__link" href="products/bali/">
+<div class="pcard__media has-second" data-card-img=""><img alt="BALI" class="pcard__img" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/03-bali-w900.jpg" srcset="assets/img/03-bali-w300.jpg 300w, assets/img/03-bali-w450.jpg 450w, assets/img/03-bali-w600.jpg 600w, assets/img/03-bali-w900.jpg 900w" width="900"/>
+<img alt="" class="pcard__img pcard__img--2" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/03-bali-face-w900.jpg" srcset="assets/img/03-bali-face-w300.jpg 300w, assets/img/03-bali-face-w450.jpg 450w, assets/img/03-bali-face-w600.jpg 600w, assets/img/03-bali-face-w900.jpg 900w" width="900"/>
+<i aria-hidden="true" class="pcard__glint"></i><span class="pcard__badge pcard__badge--sale">-€20</span></div>
+<div class="pcard__info"><p class="pcard__type">Original</p><h3 class="pcard__title">BALI</h3>
+<div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+</a><product-form class="pcard__quick" data-fly-source="[data-card-img]" data-scope=".pcard"><form accept-charset="UTF-8" action="#cart" class="pcard__form" enctype="multipart/form-data" id="product_form_15873585905990" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964977914182"/>
+<button aria-label="Add BALI to the bag" class="pcard__add" data-add="" name="add" type="submit">
+<svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+<span data-add-label="" data-label="Add">Add</span>
+</button><input name="product-id" type="hidden" value="15873585905990"/><input name="section-id" type="hidden" value="template--30216265597254__tabs"/></form></product-form></article>
+<article class="pcard reveal" style="--i: 7">
+<a class="pcard__link" href="products/maldiva/">
+<div class="pcard__media has-second" data-card-img=""><img alt="MALDIVA" class="pcard__img" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/11-maldiva-w900.jpg" srcset="assets/img/11-maldiva-w300.jpg 300w, assets/img/11-maldiva-w450.jpg 450w, assets/img/11-maldiva-w600.jpg 600w, assets/img/11-maldiva-w900.jpg 900w" width="900"/>
+<img alt="" class="pcard__img pcard__img--2" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/11-maldiva-face-w900.jpg" srcset="assets/img/11-maldiva-face-w300.jpg 300w, assets/img/11-maldiva-face-w450.jpg 450w, assets/img/11-maldiva-face-w600.jpg 600w, assets/img/11-maldiva-face-w900.jpg 900w" width="900"/>
+<i aria-hidden="true" class="pcard__glint"></i><span class="pcard__badge pcard__badge--sale">-€20</span></div>
+<div class="pcard__info"><p class="pcard__type">Signature</p><h3 class="pcard__title">MALDIVA</h3>
+<div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+</a><product-form class="pcard__quick" data-fly-source="[data-card-img]" data-scope=".pcard"><form accept-charset="UTF-8" action="#cart" class="pcard__form" enctype="multipart/form-data" id="product_form_15873586331974" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964978372934"/>
+<button aria-label="Add MALDIVA to the bag" class="pcard__add" data-add="" name="add" type="submit">
+<svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+<span data-add-label="" data-label="Add">Add</span>
+</button><input name="product-id" type="hidden" value="15873586331974"/><input name="section-id" type="hidden" value="template--30216265597254__tabs"/></form></product-form></article>
+</div><div class="grid tabsec__panel" data-panel="tab1" hidden="" id="Tab-template--30216265597254__tabs-tab1" role="tabpanel" style="--cols: 4"><article class="pcard reveal" style="--i: 0">
+<a class="pcard__link" href="products/moorea/">
+<div class="pcard__media has-second" data-card-img=""><img alt="MOOREA" class="pcard__img" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/01-moorea-w900.jpg" srcset="assets/img/01-moorea-w300.jpg 300w, assets/img/01-moorea-w450.jpg 450w, assets/img/01-moorea-w600.jpg 600w, assets/img/01-moorea-w900.jpg 900w" width="900"/>
+<img alt="" class="pcard__img pcard__img--2" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/01-moorea-face-w900.jpg" srcset="assets/img/01-moorea-face-w300.jpg 300w, assets/img/01-moorea-face-w450.jpg 450w, assets/img/01-moorea-face-w600.jpg 600w, assets/img/01-moorea-face-w900.jpg 900w" width="900"/>
+<i aria-hidden="true" class="pcard__glint"></i><span class="pcard__badge pcard__badge--sale">-€20</span></div>
+<div class="pcard__info"><p class="pcard__type">Original</p><h3 class="pcard__title">MOOREA</h3>
+<div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+</a><product-form class="pcard__quick" data-fly-source="[data-card-img]" data-scope=".pcard"><form accept-charset="UTF-8" action="#cart" class="pcard__form" enctype="multipart/form-data" id="product_form_15873585807686" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964977848646"/>
+<button aria-label="Add MOOREA to the bag" class="pcard__add" data-add="" name="add" type="submit">
+<svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+<span data-add-label="" data-label="Add">Add</span>
+</button><input name="product-id" type="hidden" value="15873585807686"/><input name="section-id" type="hidden" value="template--30216265597254__tabs"/></form></product-form></article>
+<article class="pcard reveal" style="--i: 1">
+<a class="pcard__link" href="products/tulum/">
+<div class="pcard__media has-second" data-card-img=""><img alt="TULUM" class="pcard__img" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/02-tulum-w900.jpg" srcset="assets/img/02-tulum-w300.jpg 300w, assets/img/02-tulum-w450.jpg 450w, assets/img/02-tulum-w600.jpg 600w, assets/img/02-tulum-w900.jpg 900w" width="900"/>
+<img alt="" class="pcard__img pcard__img--2" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/02-tulum-face-w900.jpg" srcset="assets/img/02-tulum-face-w300.jpg 300w, assets/img/02-tulum-face-w450.jpg 450w, assets/img/02-tulum-face-w600.jpg 600w, assets/img/02-tulum-face-w900.jpg 900w" width="900"/>
+<i aria-hidden="true" class="pcard__glint"></i><span class="pcard__badge pcard__badge--sale">-€20</span></div>
+<div class="pcard__info"><p class="pcard__type">Original</p><h3 class="pcard__title">TULUM</h3>
+<div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+</a><product-form class="pcard__quick" data-fly-source="[data-card-img]" data-scope=".pcard"><form accept-charset="UTF-8" action="#cart" class="pcard__form" enctype="multipart/form-data" id="product_form_15873585840454" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964977881414"/>
+<button aria-label="Add TULUM to the bag" class="pcard__add" data-add="" name="add" type="submit">
+<svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+<span data-add-label="" data-label="Add">Add</span>
+</button><input name="product-id" type="hidden" value="15873585840454"/><input name="section-id" type="hidden" value="template--30216265597254__tabs"/></form></product-form></article>
+<article class="pcard reveal" style="--i: 2">
+<a class="pcard__link" href="products/bali/">
+<div class="pcard__media has-second" data-card-img=""><img alt="BALI" class="pcard__img" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/03-bali-w900.jpg" srcset="assets/img/03-bali-w300.jpg 300w, assets/img/03-bali-w450.jpg 450w, assets/img/03-bali-w600.jpg 600w, assets/img/03-bali-w900.jpg 900w" width="900"/>
+<img alt="" class="pcard__img pcard__img--2" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/03-bali-face-w900.jpg" srcset="assets/img/03-bali-face-w300.jpg 300w, assets/img/03-bali-face-w450.jpg 450w, assets/img/03-bali-face-w600.jpg 600w, assets/img/03-bali-face-w900.jpg 900w" width="900"/>
+<i aria-hidden="true" class="pcard__glint"></i><span class="pcard__badge pcard__badge--sale">-€20</span></div>
+<div class="pcard__info"><p class="pcard__type">Original</p><h3 class="pcard__title">BALI</h3>
+<div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+</a><product-form class="pcard__quick" data-fly-source="[data-card-img]" data-scope=".pcard"><form accept-charset="UTF-8" action="#cart" class="pcard__form" enctype="multipart/form-data" id="product_form_15873585905990" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964977914182"/>
+<button aria-label="Add BALI to the bag" class="pcard__add" data-add="" name="add" type="submit">
+<svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+<span data-add-label="" data-label="Add">Add</span>
+</button><input name="product-id" type="hidden" value="15873585905990"/><input name="section-id" type="hidden" value="template--30216265597254__tabs"/></form></product-form></article>
+<article class="pcard reveal" style="--i: 3">
+<a class="pcard__link" href="products/zanzibar/">
+<div class="pcard__media has-second" data-card-img=""><img alt="ZANZIBAR" class="pcard__img" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/04-zanzibar-w900.jpg" srcset="assets/img/04-zanzibar-w300.jpg 300w, assets/img/04-zanzibar-w450.jpg 450w, assets/img/04-zanzibar-w600.jpg 600w, assets/img/04-zanzibar-w900.jpg 900w" width="900"/>
+<img alt="" class="pcard__img pcard__img--2" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/04-zanzibar-face-w900.jpg" srcset="assets/img/04-zanzibar-face-w300.jpg 300w, assets/img/04-zanzibar-face-w450.jpg 450w, assets/img/04-zanzibar-face-w600.jpg 600w, assets/img/04-zanzibar-face-w900.jpg 900w" width="900"/>
+<i aria-hidden="true" class="pcard__glint"></i><span class="pcard__badge pcard__badge--sale">-€20</span></div>
+<div class="pcard__info"><p class="pcard__type">Original</p><h3 class="pcard__title">ZANZIBAR</h3>
+<div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+</a><product-form class="pcard__quick" data-fly-source="[data-card-img]" data-scope=".pcard"><form accept-charset="UTF-8" action="#cart" class="pcard__form" enctype="multipart/form-data" id="product_form_15873585938758" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964977979718"/>
+<button aria-label="Add ZANZIBAR to the bag" class="pcard__add" data-add="" name="add" type="submit">
+<svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+<span data-add-label="" data-label="Add">Add</span>
+</button><input name="product-id" type="hidden" value="15873585938758"/><input name="section-id" type="hidden" value="template--30216265597254__tabs"/></form></product-form></article>
+<article class="pcard reveal" style="--i: 4">
+<a class="pcard__link" href="products/bora/">
+<div class="pcard__media has-second" data-card-img=""><img alt="BORA" class="pcard__img" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/05-bora-w900.jpg" srcset="assets/img/05-bora-w300.jpg 300w, assets/img/05-bora-w450.jpg 450w, assets/img/05-bora-w600.jpg 600w, assets/img/05-bora-w900.jpg 900w" width="900"/>
+<img alt="" class="pcard__img pcard__img--2" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/05-bora-face-w900.jpg" srcset="assets/img/05-bora-face-w300.jpg 300w, assets/img/05-bora-face-w450.jpg 450w, assets/img/05-bora-face-w600.jpg 600w, assets/img/05-bora-face-w900.jpg 900w" width="900"/>
+<i aria-hidden="true" class="pcard__glint"></i><span class="pcard__badge pcard__badge--sale">-€20</span></div>
+<div class="pcard__info"><p class="pcard__type">Original</p><h3 class="pcard__title">BORA</h3>
+<div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+</a><product-form class="pcard__quick" data-fly-source="[data-card-img]" data-scope=".pcard"><form accept-charset="UTF-8" action="#cart" class="pcard__form" enctype="multipart/form-data" id="product_form_15873585971526" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964978012486"/>
+<button aria-label="Add BORA to the bag" class="pcard__add" data-add="" name="add" type="submit">
+<svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+<span data-add-label="" data-label="Add">Add</span>
+</button><input name="product-id" type="hidden" value="15873585971526"/><input name="section-id" type="hidden" value="template--30216265597254__tabs"/></form></product-form></article>
+<article class="pcard reveal" style="--i: 5">
+<a class="pcard__link" href="products/fiji/">
+<div class="pcard__media has-second" data-card-img=""><img alt="FIJI" class="pcard__img" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/06-fiji-w900.jpg" srcset="assets/img/06-fiji-w300.jpg 300w, assets/img/06-fiji-w450.jpg 450w, assets/img/06-fiji-w600.jpg 600w, assets/img/06-fiji-w900.jpg 900w" width="900"/>
+<img alt="" class="pcard__img pcard__img--2" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/06-fiji-face-w900.jpg" srcset="assets/img/06-fiji-face-w300.jpg 300w, assets/img/06-fiji-face-w450.jpg 450w, assets/img/06-fiji-face-w600.jpg 600w, assets/img/06-fiji-face-w900.jpg 900w" width="900"/>
+<i aria-hidden="true" class="pcard__glint"></i><span class="pcard__badge pcard__badge--sale">-€20</span></div>
+<div class="pcard__info"><p class="pcard__type">Original</p><h3 class="pcard__title">FIJI</h3>
+<div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+</a><product-form class="pcard__quick" data-fly-source="[data-card-img]" data-scope=".pcard"><form accept-charset="UTF-8" action="#cart" class="pcard__form" enctype="multipart/form-data" id="product_form_15873586069830" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964978110790"/>
+<button aria-label="Add FIJI to the bag" class="pcard__add" data-add="" name="add" type="submit">
+<svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+<span data-add-label="" data-label="Add">Add</span>
+</button><input name="product-id" type="hidden" value="15873586069830"/><input name="section-id" type="hidden" value="template--30216265597254__tabs"/></form></product-form></article>
+<article class="pcard reveal" style="--i: 6">
+<a class="pcard__link" href="products/lanai/">
+<div class="pcard__media has-second" data-card-img=""><img alt="LANAI" class="pcard__img" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/07-lanai-w900.jpg" srcset="assets/img/07-lanai-w300.jpg 300w, assets/img/07-lanai-w450.jpg 450w, assets/img/07-lanai-w600.jpg 600w, assets/img/07-lanai-w900.jpg 900w" width="900"/>
+<img alt="" class="pcard__img pcard__img--2" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/07-lanai-face-w900.jpg" srcset="assets/img/07-lanai-face-w300.jpg 300w, assets/img/07-lanai-face-w450.jpg 450w, assets/img/07-lanai-face-w600.jpg 600w, assets/img/07-lanai-face-w900.jpg 900w" width="900"/>
+<i aria-hidden="true" class="pcard__glint"></i><span class="pcard__badge pcard__badge--sale">-€20</span></div>
+<div class="pcard__info"><p class="pcard__type">Original</p><h3 class="pcard__title">LANAI</h3>
+<div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+</a><product-form class="pcard__quick" data-fly-source="[data-card-img]" data-scope=".pcard"><form accept-charset="UTF-8" action="#cart" class="pcard__form" enctype="multipart/form-data" id="product_form_15873586102598" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964978143558"/>
+<button aria-label="Add LANAI to the bag" class="pcard__add" data-add="" name="add" type="submit">
+<svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+<span data-add-label="" data-label="Add">Add</span>
+</button><input name="product-id" type="hidden" value="15873586102598"/><input name="section-id" type="hidden" value="template--30216265597254__tabs"/></form></product-form></article>
+<article class="pcard reveal" style="--i: 7">
+<a class="pcard__link" href="products/seychelles/">
+<div class="pcard__media has-second" data-card-img=""><img alt="SEYCHELLES" class="pcard__img" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/08-seychelles-w900.jpg" srcset="assets/img/08-seychelles-w300.jpg 300w, assets/img/08-seychelles-w450.jpg 450w, assets/img/08-seychelles-w600.jpg 600w, assets/img/08-seychelles-w900.jpg 900w" width="900"/>
+<img alt="" class="pcard__img pcard__img--2" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/08-seychelles-face-w900.jpg" srcset="assets/img/08-seychelles-face-w300.jpg 300w, assets/img/08-seychelles-face-w450.jpg 450w, assets/img/08-seychelles-face-w600.jpg 600w, assets/img/08-seychelles-face-w900.jpg 900w" width="900"/>
+<i aria-hidden="true" class="pcard__glint"></i><span class="pcard__badge pcard__badge--sale">-€20</span></div>
+<div class="pcard__info"><p class="pcard__type">Original</p><h3 class="pcard__title">SEYCHELLES</h3>
+<div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+</a><product-form class="pcard__quick" data-fly-source="[data-card-img]" data-scope=".pcard"><form accept-charset="UTF-8" action="#cart" class="pcard__form" enctype="multipart/form-data" id="product_form_15873586168134" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964978209094"/>
+<button aria-label="Add SEYCHELLES to the bag" class="pcard__add" data-add="" name="add" type="submit">
+<svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+<span data-add-label="" data-label="Add">Add</span>
+</button><input name="product-id" type="hidden" value="15873586168134"/><input name="section-id" type="hidden" value="template--30216265597254__tabs"/></form></product-form></article>
+</div><div class="grid tabsec__panel" data-panel="tab2" hidden="" id="Tab-template--30216265597254__tabs-tab2" role="tabpanel" style="--cols: 4"><article class="pcard reveal" style="--i: 0">
+<a class="pcard__link" href="products/aruba/">
+<div class="pcard__media has-second" data-card-img=""><img alt="ARUBA" class="pcard__img" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/09-aruba-w900.jpg" srcset="assets/img/09-aruba-w300.jpg 300w, assets/img/09-aruba-w450.jpg 450w, assets/img/09-aruba-w600.jpg 600w, assets/img/09-aruba-w900.jpg 900w" width="900"/>
+<img alt="" class="pcard__img pcard__img--2" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/09-aruba-face-w900.jpg" srcset="assets/img/09-aruba-face-w300.jpg 300w, assets/img/09-aruba-face-w450.jpg 450w, assets/img/09-aruba-face-w600.jpg 600w, assets/img/09-aruba-face-w900.jpg 900w" width="900"/>
+<i aria-hidden="true" class="pcard__glint"></i><span class="pcard__badge pcard__badge--sale">-€20</span></div>
+<div class="pcard__info"><p class="pcard__type">Signature</p><h3 class="pcard__title">ARUBA</h3>
+<div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+</a><product-form class="pcard__quick" data-fly-source="[data-card-img]" data-scope=".pcard"><form accept-charset="UTF-8" action="#cart" class="pcard__form" enctype="multipart/form-data" id="product_form_15873586200902" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964978241862"/>
+<button aria-label="Add ARUBA to the bag" class="pcard__add" data-add="" name="add" type="submit">
+<svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+<span data-add-label="" data-label="Add">Add</span>
+</button><input name="product-id" type="hidden" value="15873586200902"/><input name="section-id" type="hidden" value="template--30216265597254__tabs"/></form></product-form></article>
+<article class="pcard reveal" style="--i: 1">
+<a class="pcard__link" href="products/palawan/">
+<div class="pcard__media has-second" data-card-img=""><img alt="PALAWAN" class="pcard__img" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/10-palawan-w900.jpg" srcset="assets/img/10-palawan-w300.jpg 300w, assets/img/10-palawan-w450.jpg 450w, assets/img/10-palawan-w600.jpg 600w, assets/img/10-palawan-w900.jpg 900w" width="900"/>
+<img alt="" class="pcard__img pcard__img--2" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/10-palawan-face-w900.jpg" srcset="assets/img/10-palawan-face-w300.jpg 300w, assets/img/10-palawan-face-w450.jpg 450w, assets/img/10-palawan-face-w600.jpg 600w, assets/img/10-palawan-face-w900.jpg 900w" width="900"/>
+<i aria-hidden="true" class="pcard__glint"></i><span class="pcard__badge pcard__badge--sale">-€20</span></div>
+<div class="pcard__info"><p class="pcard__type">Signature</p><h3 class="pcard__title">PALAWAN</h3>
+<div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+</a><product-form class="pcard__quick" data-fly-source="[data-card-img]" data-scope=".pcard"><form accept-charset="UTF-8" action="#cart" class="pcard__form" enctype="multipart/form-data" id="product_form_15873586233670" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964978274630"/>
+<button aria-label="Add PALAWAN to the bag" class="pcard__add" data-add="" name="add" type="submit">
+<svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+<span data-add-label="" data-label="Add">Add</span>
+</button><input name="product-id" type="hidden" value="15873586233670"/><input name="section-id" type="hidden" value="template--30216265597254__tabs"/></form></product-form></article>
+<article class="pcard reveal" style="--i: 2">
+<a class="pcard__link" href="products/maldiva/">
+<div class="pcard__media has-second" data-card-img=""><img alt="MALDIVA" class="pcard__img" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/11-maldiva-w900.jpg" srcset="assets/img/11-maldiva-w300.jpg 300w, assets/img/11-maldiva-w450.jpg 450w, assets/img/11-maldiva-w600.jpg 600w, assets/img/11-maldiva-w900.jpg 900w" width="900"/>
+<img alt="" class="pcard__img pcard__img--2" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/11-maldiva-face-w900.jpg" srcset="assets/img/11-maldiva-face-w300.jpg 300w, assets/img/11-maldiva-face-w450.jpg 450w, assets/img/11-maldiva-face-w600.jpg 600w, assets/img/11-maldiva-face-w900.jpg 900w" width="900"/>
+<i aria-hidden="true" class="pcard__glint"></i><span class="pcard__badge pcard__badge--sale">-€20</span></div>
+<div class="pcard__info"><p class="pcard__type">Signature</p><h3 class="pcard__title">MALDIVA</h3>
+<div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+</a><product-form class="pcard__quick" data-fly-source="[data-card-img]" data-scope=".pcard"><form accept-charset="UTF-8" action="#cart" class="pcard__form" enctype="multipart/form-data" id="product_form_15873586331974" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964978372934"/>
+<button aria-label="Add MALDIVA to the bag" class="pcard__add" data-add="" name="add" type="submit">
+<svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+<span data-add-label="" data-label="Add">Add</span>
+</button><input name="product-id" type="hidden" value="15873586331974"/><input name="section-id" type="hidden" value="template--30216265597254__tabs"/></form></product-form></article>
+<article class="pcard reveal" style="--i: 3">
+<a class="pcard__link" href="products/cancun/">
+<div class="pcard__media has-second" data-card-img=""><img alt="CANCUN" class="pcard__img" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/12-cancun-w900.jpg" srcset="assets/img/12-cancun-w300.jpg 300w, assets/img/12-cancun-w450.jpg 450w, assets/img/12-cancun-w600.jpg 600w, assets/img/12-cancun-w900.jpg 900w" width="900"/>
+<img alt="" class="pcard__img pcard__img--2" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/12-cancun-face-w900.jpg" srcset="assets/img/12-cancun-face-w300.jpg 300w, assets/img/12-cancun-face-w450.jpg 450w, assets/img/12-cancun-face-w600.jpg 600w, assets/img/12-cancun-face-w900.jpg 900w" width="900"/>
+<i aria-hidden="true" class="pcard__glint"></i><span class="pcard__badge pcard__badge--sale">-€20</span></div>
+<div class="pcard__info"><p class="pcard__type">Signature</p><h3 class="pcard__title">CANCUN</h3>
+<div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+</a><product-form class="pcard__quick" data-fly-source="[data-card-img]" data-scope=".pcard"><form accept-charset="UTF-8" action="#cart" class="pcard__form" enctype="multipart/form-data" id="product_form_15873586364742" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964978405702"/>
+<button aria-label="Add CANCUN to the bag" class="pcard__add" data-add="" name="add" type="submit">
+<svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+<span data-add-label="" data-label="Add">Add</span>
+</button><input name="product-id" type="hidden" value="15873586364742"/><input name="section-id" type="hidden" value="template--30216265597254__tabs"/></form></product-form></article>
+<article class="pcard reveal" style="--i: 4">
+<a class="pcard__link" href="products/hawaii/">
+<div class="pcard__media has-second" data-card-img=""><img alt="HAWAII" class="pcard__img" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/13-hawaii-w900.jpg" srcset="assets/img/13-hawaii-w300.jpg 300w, assets/img/13-hawaii-w450.jpg 450w, assets/img/13-hawaii-w600.jpg 600w, assets/img/13-hawaii-w900.jpg 900w" width="900"/>
+<img alt="" class="pcard__img pcard__img--2" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/13-hawaii-face-w900.jpg" srcset="assets/img/13-hawaii-face-w300.jpg 300w, assets/img/13-hawaii-face-w450.jpg 450w, assets/img/13-hawaii-face-w600.jpg 600w, assets/img/13-hawaii-face-w900.jpg 900w" width="900"/>
+<i aria-hidden="true" class="pcard__glint"></i><span class="pcard__badge pcard__badge--sale">-€20</span></div>
+<div class="pcard__info"><p class="pcard__type">Signature</p><h3 class="pcard__title">HAWAII</h3>
+<div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+</a><product-form class="pcard__quick" data-fly-source="[data-card-img]" data-scope=".pcard"><form accept-charset="UTF-8" action="#cart" class="pcard__form" enctype="multipart/form-data" id="product_form_15873589117254" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964989972806"/>
+<button aria-label="Add HAWAII to the bag" class="pcard__add" data-add="" name="add" type="submit">
+<svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+<span data-add-label="" data-label="Add">Add</span>
+</button><input name="product-id" type="hidden" value="15873589117254"/><input name="section-id" type="hidden" value="template--30216265597254__tabs"/></form></product-form></article>
+<article class="pcard reveal" style="--i: 5">
+<a class="pcard__link" href="products/tahiti/">
+<div class="pcard__media has-second" data-card-img=""><img alt="TAHITI" class="pcard__img" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/14-tahiti-w900.jpg" srcset="assets/img/14-tahiti-w300.jpg 300w, assets/img/14-tahiti-w450.jpg 450w, assets/img/14-tahiti-w600.jpg 600w, assets/img/14-tahiti-w900.jpg 900w" width="900"/>
+<img alt="" class="pcard__img pcard__img--2" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/14-tahiti-face-w900.jpg" srcset="assets/img/14-tahiti-face-w300.jpg 300w, assets/img/14-tahiti-face-w450.jpg 450w, assets/img/14-tahiti-face-w600.jpg 600w, assets/img/14-tahiti-face-w900.jpg 900w" width="900"/>
+<i aria-hidden="true" class="pcard__glint"></i><span class="pcard__badge pcard__badge--sale">-€20</span></div>
+<div class="pcard__info"><p class="pcard__type">Signature</p><h3 class="pcard__title">TAHITI</h3>
+<div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+</a><product-form class="pcard__quick" data-fly-source="[data-card-img]" data-scope=".pcard"><form accept-charset="UTF-8" action="#cart" class="pcard__form" enctype="multipart/form-data" id="product_form_15873589150022" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964990005574"/>
+<button aria-label="Add TAHITI to the bag" class="pcard__add" data-add="" name="add" type="submit">
+<svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+<span data-add-label="" data-label="Add">Add</span>
+</button><input name="product-id" type="hidden" value="15873589150022"/><input name="section-id" type="hidden" value="template--30216265597254__tabs"/></form></product-form></article>
+<article class="pcard reveal" style="--i: 6">
+<a class="pcard__link" href="products/bahamas/">
+<div class="pcard__media has-second" data-card-img=""><img alt="BAHAMAS" class="pcard__img" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/15-bahamas-w900.jpg" srcset="assets/img/15-bahamas-w300.jpg 300w, assets/img/15-bahamas-w450.jpg 450w, assets/img/15-bahamas-w600.jpg 600w, assets/img/15-bahamas-w900.jpg 900w" width="900"/>
+<img alt="" class="pcard__img pcard__img--2" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/15-bahamas-face-w900.jpg" srcset="assets/img/15-bahamas-face-w300.jpg 300w, assets/img/15-bahamas-face-w450.jpg 450w, assets/img/15-bahamas-face-w600.jpg 600w, assets/img/15-bahamas-face-w900.jpg 900w" width="900"/>
+<i aria-hidden="true" class="pcard__glint"></i><span class="pcard__badge pcard__badge--sale">-€20</span></div>
+<div class="pcard__info"><p class="pcard__type">Signature</p><h3 class="pcard__title">BAHAMAS</h3>
+<div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+</a><product-form class="pcard__quick" data-fly-source="[data-card-img]" data-scope=".pcard"><form accept-charset="UTF-8" action="#cart" class="pcard__form" enctype="multipart/form-data" id="product_form_15873589215558" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964990071110"/>
+<button aria-label="Add BAHAMAS to the bag" class="pcard__add" data-add="" name="add" type="submit">
+<svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+<span data-add-label="" data-label="Add">Add</span>
+</button><input name="product-id" type="hidden" value="15873589215558"/><input name="section-id" type="hidden" value="template--30216265597254__tabs"/></form></product-form></article>
+<article class="pcard reveal" style="--i: 7">
+<a class="pcard__link" href="products/curacao/">
+<div class="pcard__media has-second" data-card-img=""><img alt="CURACAO" class="pcard__img" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/16-curacao-w900.jpg" srcset="assets/img/16-curacao-w300.jpg 300w, assets/img/16-curacao-w450.jpg 450w, assets/img/16-curacao-w600.jpg 600w, assets/img/16-curacao-w900.jpg 900w" width="900"/>
+<img alt="" class="pcard__img pcard__img--2" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/16-curacao-face-w900.jpg" srcset="assets/img/16-curacao-face-w300.jpg 300w, assets/img/16-curacao-face-w450.jpg 450w, assets/img/16-curacao-face-w600.jpg 600w, assets/img/16-curacao-face-w900.jpg 900w" width="900"/>
+<i aria-hidden="true" class="pcard__glint"></i><span class="pcard__badge pcard__badge--sale">-€20</span></div>
+<div class="pcard__info"><p class="pcard__type">Signature</p><h3 class="pcard__title">CURACAO</h3>
+<div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+</a><product-form class="pcard__quick" data-fly-source="[data-card-img]" data-scope=".pcard"><form accept-charset="UTF-8" action="#cart" class="pcard__form" enctype="multipart/form-data" id="product_form_15873589281094" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964990136646"/>
+<button aria-label="Add CURACAO to the bag" class="pcard__add" data-add="" name="add" type="submit">
+<svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+<span data-add-label="" data-label="Add">Add</span>
+</button><input name="product-id" type="hidden" value="15873589281094"/><input name="section-id" type="hidden" value="template--30216265597254__tabs"/></form></product-form></article>
+</div><div class="grid tabsec__panel" data-panel="tab3" hidden="" id="Tab-template--30216265597254__tabs-tab3" role="tabpanel" style="--cols: 4"><article class="pcard reveal" style="--i: 0">
+<a class="pcard__link" href="products/belize/">
+<div class="pcard__media has-second" data-card-img=""><img alt="BELIZE" class="pcard__img" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/17-belize-w900.jpg" srcset="assets/img/17-belize-w300.jpg 300w, assets/img/17-belize-w450.jpg 450w, assets/img/17-belize-w600.jpg 600w, assets/img/17-belize-w900.jpg 900w" width="900"/>
+<img alt="" class="pcard__img pcard__img--2" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/17-belize-face-w900.jpg" srcset="assets/img/17-belize-face-w300.jpg 300w, assets/img/17-belize-face-w450.jpg 450w, assets/img/17-belize-face-w600.jpg 600w, assets/img/17-belize-face-w900.jpg 900w" width="900"/>
+<i aria-hidden="true" class="pcard__glint"></i><span class="pcard__badge pcard__badge--sale">-€20</span></div>
+<div class="pcard__info"><p class="pcard__type">Essentiel</p><h3 class="pcard__title">BELIZE</h3>
+<div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+</a><product-form class="pcard__quick" data-fly-source="[data-card-img]" data-scope=".pcard"><form accept-charset="UTF-8" action="#cart" class="pcard__form" enctype="multipart/form-data" id="product_form_15873589313862" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964990169414"/>
+<button aria-label="Add BELIZE to the bag" class="pcard__add" data-add="" name="add" type="submit">
+<svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+<span data-add-label="" data-label="Add">Add</span>
+</button><input name="product-id" type="hidden" value="15873589313862"/><input name="section-id" type="hidden" value="template--30216265597254__tabs"/></form></product-form></article>
+<article class="pcard reveal" style="--i: 1">
+<a class="pcard__link" href="products/antigua/">
+<div class="pcard__media has-second" data-card-img=""><img alt="ANTIGUA" class="pcard__img" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/18-antigua-w900.jpg" srcset="assets/img/18-antigua-w300.jpg 300w, assets/img/18-antigua-w450.jpg 450w, assets/img/18-antigua-w600.jpg 600w, assets/img/18-antigua-w900.jpg 900w" width="900"/>
+<img alt="" class="pcard__img pcard__img--2" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/18-antigua-face-w900.jpg" srcset="assets/img/18-antigua-face-w300.jpg 300w, assets/img/18-antigua-face-w450.jpg 450w, assets/img/18-antigua-face-w600.jpg 600w, assets/img/18-antigua-face-w900.jpg 900w" width="900"/>
+<i aria-hidden="true" class="pcard__glint"></i><span class="pcard__badge pcard__badge--sale">-€20</span></div>
+<div class="pcard__info"><p class="pcard__type">Essentiel</p><h3 class="pcard__title">ANTIGUA</h3>
+<div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+</a><product-form class="pcard__quick" data-fly-source="[data-card-img]" data-scope=".pcard"><form accept-charset="UTF-8" action="#cart" class="pcard__form" enctype="multipart/form-data" id="product_form_15873589379398" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964990234950"/>
+<button aria-label="Add ANTIGUA to the bag" class="pcard__add" data-add="" name="add" type="submit">
+<svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+<span data-add-label="" data-label="Add">Add</span>
+</button><input name="product-id" type="hidden" value="15873589379398"/><input name="section-id" type="hidden" value="template--30216265597254__tabs"/></form></product-form></article>
+<article class="pcard reveal" style="--i: 2">
+<a class="pcard__link" href="products/grenada/">
+<div class="pcard__media has-second" data-card-img=""><img alt="GRENADA" class="pcard__img" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/19-grenada-w900.jpg" srcset="assets/img/19-grenada-w300.jpg 300w, assets/img/19-grenada-w450.jpg 450w, assets/img/19-grenada-w600.jpg 600w, assets/img/19-grenada-w900.jpg 900w" width="900"/>
+<img alt="" class="pcard__img pcard__img--2" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/19-grenada-face-w900.jpg" srcset="assets/img/19-grenada-face-w300.jpg 300w, assets/img/19-grenada-face-w450.jpg 450w, assets/img/19-grenada-face-w600.jpg 600w, assets/img/19-grenada-face-w900.jpg 900w" width="900"/>
+<i aria-hidden="true" class="pcard__glint"></i><span class="pcard__badge pcard__badge--sale">-€20</span></div>
+<div class="pcard__info"><p class="pcard__type">Essentiel</p><h3 class="pcard__title">GRENADA</h3>
+<div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+</a><product-form class="pcard__quick" data-fly-source="[data-card-img]" data-scope=".pcard"><form accept-charset="UTF-8" action="#cart" class="pcard__form" enctype="multipart/form-data" id="product_form_15873589444934" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964990300486"/>
+<button aria-label="Add GRENADA to the bag" class="pcard__add" data-add="" name="add" type="submit">
+<svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+<span data-add-label="" data-label="Add">Add</span>
+</button><input name="product-id" type="hidden" value="15873589444934"/><input name="section-id" type="hidden" value="template--30216265597254__tabs"/></form></product-form></article>
+<article class="pcard reveal" style="--i: 3">
+<a class="pcard__link" href="products/phuket/">
+<div class="pcard__media has-second" data-card-img=""><img alt="PHUKET" class="pcard__img" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/20-phuket-w900.jpg" srcset="assets/img/20-phuket-w300.jpg 300w, assets/img/20-phuket-w450.jpg 450w, assets/img/20-phuket-w600.jpg 600w, assets/img/20-phuket-w900.jpg 900w" width="900"/>
+<img alt="" class="pcard__img pcard__img--2" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/20-phuket-face-w900.jpg" srcset="assets/img/20-phuket-face-w300.jpg 300w, assets/img/20-phuket-face-w450.jpg 450w, assets/img/20-phuket-face-w600.jpg 600w, assets/img/20-phuket-face-w900.jpg 900w" width="900"/>
+<i aria-hidden="true" class="pcard__glint"></i><span class="pcard__badge pcard__badge--sale">-€20</span></div>
+<div class="pcard__info"><p class="pcard__type">Essentiel</p><h3 class="pcard__title">PHUKET</h3>
+<div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+</a><product-form class="pcard__quick" data-fly-source="[data-card-img]" data-scope=".pcard"><form accept-charset="UTF-8" action="#cart" class="pcard__form" enctype="multipart/form-data" id="product_form_15873589510470" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964990366022"/>
+<button aria-label="Add PHUKET to the bag" class="pcard__add" data-add="" name="add" type="submit">
+<svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+<span data-add-label="" data-label="Add">Add</span>
+</button><input name="product-id" type="hidden" value="15873589510470"/><input name="section-id" type="hidden" value="template--30216265597254__tabs"/></form></product-form></article>
+<article class="pcard reveal" style="--i: 4">
+<a class="pcard__link" href="products/borneo/">
+<div class="pcard__media has-second" data-card-img=""><img alt="BORNEO" class="pcard__img" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/21-borneo-w900.jpg" srcset="assets/img/21-borneo-w300.jpg 300w, assets/img/21-borneo-w450.jpg 450w, assets/img/21-borneo-w600.jpg 600w, assets/img/21-borneo-w900.jpg 900w" width="900"/>
+<img alt="" class="pcard__img pcard__img--2" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/21-borneo-face-w900.jpg" srcset="assets/img/21-borneo-face-w300.jpg 300w, assets/img/21-borneo-face-w450.jpg 450w, assets/img/21-borneo-face-w600.jpg 600w, assets/img/21-borneo-face-w900.jpg 900w" width="900"/>
+<i aria-hidden="true" class="pcard__glint"></i><span class="pcard__badge pcard__badge--sale">-€20</span></div>
+<div class="pcard__info"><p class="pcard__type">Essentiel</p><h3 class="pcard__title">BORNEO</h3>
+<div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+</a><product-form class="pcard__quick" data-fly-source="[data-card-img]" data-scope=".pcard"><form accept-charset="UTF-8" action="#cart" class="pcard__form" enctype="multipart/form-data" id="product_form_15873589576006" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964990398790"/>
+<button aria-label="Add BORNEO to the bag" class="pcard__add" data-add="" name="add" type="submit">
+<svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+<span data-add-label="" data-label="Add">Add</span>
+</button><input name="product-id" type="hidden" value="15873589576006"/><input name="section-id" type="hidden" value="template--30216265597254__tabs"/></form></product-form></article>
+<article class="pcard reveal" style="--i: 5">
+<a class="pcard__link" href="products/maui/">
+<div class="pcard__media has-second" data-card-img=""><img alt="MAUI" class="pcard__img" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/22-maui-w900.jpg" srcset="assets/img/22-maui-w300.jpg 300w, assets/img/22-maui-w450.jpg 450w, assets/img/22-maui-w600.jpg 600w, assets/img/22-maui-w900.jpg 900w" width="900"/>
+<img alt="" class="pcard__img pcard__img--2" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/22-maui-face-w900.jpg" srcset="assets/img/22-maui-face-w300.jpg 300w, assets/img/22-maui-face-w450.jpg 450w, assets/img/22-maui-face-w600.jpg 600w, assets/img/22-maui-face-w900.jpg 900w" width="900"/>
+<i aria-hidden="true" class="pcard__glint"></i><span class="pcard__badge pcard__badge--sale">-€20</span></div>
+<div class="pcard__info"><p class="pcard__type">Essentiel</p><h3 class="pcard__title">MAUI</h3>
+<div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+</a><product-form class="pcard__quick" data-fly-source="[data-card-img]" data-scope=".pcard"><form accept-charset="UTF-8" action="#cart" class="pcard__form" enctype="multipart/form-data" id="product_form_15873589641542" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964990497094"/>
+<button aria-label="Add MAUI to the bag" class="pcard__add" data-add="" name="add" type="submit">
+<svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+<span data-add-label="" data-label="Add">Add</span>
+</button><input name="product-id" type="hidden" value="15873589641542"/><input name="section-id" type="hidden" value="template--30216265597254__tabs"/></form></product-form></article>
+<article class="pcard reveal" style="--i: 6">
+<a class="pcard__link" href="products/samoa/">
+<div class="pcard__media has-second" data-card-img=""><img alt="SAMOA" class="pcard__img" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/23-samoa-w900.jpg" srcset="assets/img/23-samoa-w300.jpg 300w, assets/img/23-samoa-w450.jpg 450w, assets/img/23-samoa-w600.jpg 600w, assets/img/23-samoa-w900.jpg 900w" width="900"/>
+<img alt="" class="pcard__img pcard__img--2" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/23-samoa-face-w900.jpg" srcset="assets/img/23-samoa-face-w300.jpg 300w, assets/img/23-samoa-face-w450.jpg 450w, assets/img/23-samoa-face-w600.jpg 600w, assets/img/23-samoa-face-w900.jpg 900w" width="900"/>
+<i aria-hidden="true" class="pcard__glint"></i><span class="pcard__badge pcard__badge--sale">-€20</span></div>
+<div class="pcard__info"><p class="pcard__type">Essentiel</p><h3 class="pcard__title">SAMOA</h3>
+<div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+</a><product-form class="pcard__quick" data-fly-source="[data-card-img]" data-scope=".pcard"><form accept-charset="UTF-8" action="#cart" class="pcard__form" enctype="multipart/form-data" id="product_form_15873589707078" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964990562630"/>
+<button aria-label="Add SAMOA to the bag" class="pcard__add" data-add="" name="add" type="submit">
+<svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+<span data-add-label="" data-label="Add">Add</span>
+</button><input name="product-id" type="hidden" value="15873589707078"/><input name="section-id" type="hidden" value="template--30216265597254__tabs"/></form></product-form></article>
+<article class="pcard reveal" style="--i: 7">
+<a class="pcard__link" href="products/tonga/">
+<div class="pcard__media has-second" data-card-img=""><img alt="TONGA" class="pcard__img" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/24-tonga-w900.jpg" srcset="assets/img/24-tonga-w300.jpg 300w, assets/img/24-tonga-w450.jpg 450w, assets/img/24-tonga-w600.jpg 600w, assets/img/24-tonga-w900.jpg 900w" width="900"/>
+<img alt="" class="pcard__img pcard__img--2" height="900" loading="lazy" sizes="(min-width: 990px) 25vw, (min-width: 750px) 33vw, 50vw" src="assets/img/24-tonga-face-w900.jpg" srcset="assets/img/24-tonga-face-w300.jpg 300w, assets/img/24-tonga-face-w450.jpg 450w, assets/img/24-tonga-face-w600.jpg 600w, assets/img/24-tonga-face-w900.jpg 900w" width="900"/>
+<i aria-hidden="true" class="pcard__glint"></i><span class="pcard__badge pcard__badge--sale">-€20</span></div>
+<div class="pcard__info"><p class="pcard__type">Essentiel</p><h3 class="pcard__title">TONGA</h3>
+<div class="price price--sale" data-price=""><span class="visually-hidden">Sale price</span>
+<span class="price__now">€39,00</span><span class="visually-hidden">Regular price</span>
+<s class="price__was">€59,00</s></div>
+</div>
+</a><product-form class="pcard__quick" data-fly-source="[data-card-img]" data-scope=".pcard"><form accept-charset="UTF-8" action="#cart" class="pcard__form" enctype="multipart/form-data" id="product_form_15873589805382" method="post" novalidate="novalidate"><input name="form_type" type="hidden" value="product"/><input name="utf8" type="hidden" value="✓"/><input data-variant-id="" name="id" type="hidden" value="57964990923078"/>
+<button aria-label="Add TONGA to the bag" class="pcard__add" data-add="" name="add" type="submit">
+<svg aria-hidden="true" class="icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2"></path></svg>
+<span data-add-label="" data-label="Add">Add</span>
+</button><input name="product-id" type="hidden" value="15873589805382"/><input name="section-id" type="hidden" value="template--30216265597254__tabs"/></form></product-form></article>
+</div><p class="tabsec__more"><a class="btn-soft" href="collections/lunettes/">See all the pairs</a></p></div>
+</section>
+</div><div class="shopify-section section-bogo" id="shopify-section-template--30216265597254__bogo"><section class="block-pad bogo-sec">
+<div class="wrap">
+<div class="bogo reveal" style="--ratio: 2.7073; --mask: url('lagoa-lens-mask.png')">
+<div class="bogo__txt">
+<p class="kicker">The offer</p>
+<h2 class="h2 bogo__h">
+<span>1 pair bought</span>
+<em>= 1 pair free</em>
+</h2>
+<div class="lead">Add two pairs to your bag: the second one is on us. Four pairs? Two are free.</div>
+<a class="btn-dream btn-dream--inline" href="collections/lunettes/"><span>Choose my pairs</span><i aria-hidden="true" class="btn-dream__shine"></i></a>
+<p class="bogo__fine">Discount applied automatically at checkout, on the lower-priced pair.</p>
+</div>
+<div aria-hidden="true" class="bogo__stage">
+<div class="bogo__pair bogo__pair--a" style="--t1: #3E7BFF; --t2: #FF6FA0">
+<div class="bogo__tint"></div><img alt="" height="369" loading="lazy" src="assets/lagoa-frame.webp" width="1000"/>
+</div>
+<span class="bogo__plus">+</span>
+<div class="bogo__pair bogo__pair--b" style="--t1: #E8A21C; --t2: #C2551A">
+<div class="bogo__tint"></div><img alt="" height="369" loading="lazy" src="assets/lagoa-frame.webp" width="1000"/>
+<span class="bogo__ribbon">Free</span>
+</div>
+<i class="bogo__spark"></i><i class="bogo__spark"></i><i class="bogo__spark"></i>
+</div>
+</div>
+</div>
+</section>
+</div><div class="shopify-section section-cards" id="shopify-section-template--30216265597254__cards"><section class="block-pad cards-sec" style="--cols: 3">
+<div class="wrap">
+<p class="kicker">The collections</p>
+<h2 class="h2">Three shapes, one lagoon.</h2>
+<div class="cards"><article class="card reveal" style="--c: #14A6C8; --c2: #1C5FD6">
+<div class="card__img"><img alt="" height="900" loading="lazy" src="assets/card-1.jpg" width="900"/></div>
+<div class="card__body"><p class="card__when">Round</p><h3 class="card__title">Original</h3><p class="card__txt">Thick acetate, round lenses: the timeless pair.</p></div>
+</article><article class="card reveal" style="--c: #E0247F; --c2: #FF7A45">
+<div class="card__img"><img alt="" height="900" loading="lazy" src="assets/card-2.jpg" width="900"/></div>
+<div class="card__body"><p class="card__when">Square</p><h3 class="card__title">Signature</h3><p class="card__txt">Strong lines for a sharper look, in bold colours.</p></div>
+</article><article class="card reveal" style="--c: #7B3CF0; --c2: #C23BD6">
+<div class="card__img"><img alt="" height="900" loading="lazy" src="assets/card-3.jpg" width="900"/></div>
+<div class="card__body"><p class="card__when">Cat-eye</p><h3 class="card__title">Essentiel</h3><p class="card__txt">Lifted corners, light frame: the summer pair.</p></div>
+</article></div>
+</div>
+</section>
+</div><div class="shopify-section section-feature" id="shopify-section-template--30216265597254__feature"><section class="block-pad feature feature--img-left">
+<div class="wrap feature__in">
+<div class="feature__img reveal"><div aria-label="Made to be worn every day." class="feature__demo feature__demo--lens" role="img" style="background-image: url('assets/lagoa-decor-tall.jpg')">
+<img alt="" height="591" loading="lazy" src="assets/lagoa-frame.webp" width="1600"/>
+</div></div>
+<div class="feature__txt">
+<p class="kicker">The frames</p>
+<h2 class="h2">Made to be worn every day.</h2>
+<div class="feature__lead rte"><p>Thick polished acetate, metal rivets and hinges, tinted lenses that block 100% of UV rays.</p></div><dl class="specs"><div><dt>Frame</dt><dd>Polished acetate</dd></div><div><dt>Lenses</dt><dd>UV400, category 3</dd></div><div><dt>Hinges</dt><dd>Metal, 5 barrels</dd></div><div><dt>Weight</dt><dd>About 28 g</dd></div><div><dt>Included</dt><dd>Case and cleaning cloth</dd></div><div><dt>Warranty</dt><dd>2 years</dd></div></dl><details class="acc">
+<summary>Lens care</summary>
+<div class="acc__b rte"><p>Clean the lenses with the cloth or lukewarm water. Avoid paper tissues, they scratch.</p></div>
+</details><details class="acc">
+<summary>Protection</summary>
+<div class="acc__b rte"><p>UV400 category 3 lenses: for bright sun. Not suitable for driving at night.</p></div>
+</details><details class="acc">
+<summary>Sizes</summary>
+<div class="acc__b rte"><p>Lens width 49 to 52 mm, bridge 20 mm, temples 145 mm. Sample values: replace them with yours.</p></div>
+</details></div>
+</div>
+</section>
+</div><div class="shopify-section section-guar" id="shopify-section-template--30216265597254__guar"><section class="guar-sec">
+<div class="wrap guar" style="--cols: 4"><div class="guar__item reveal">
+<span class="guar__ico"><svg aria-hidden="true" class="icon" focusable="false" viewbox="0 0 24 24"><circle cx="12" cy="12" fill="none" r="4.2" stroke="currentColor" stroke-width="1.7"></circle><path d="M12 2.8v2.4M12 18.8v2.4M2.8 12h2.4M18.8 12h2.4M5.5 5.5l1.7 1.7M16.8 16.8l1.7 1.7M5.5 18.5l1.7-1.7M16.8 7.2l1.7-1.7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path></svg></span>
+<b>UV400 protection</b>
+<span>On every pair</span>
+</div><div class="guar__item reveal">
+<span class="guar__ico"><svg aria-hidden="true" class="icon" focusable="false" viewbox="0 0 24 24"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.6"></path><circle cx="7" cy="17.5" fill="var(--c-surface)" r="1.8" stroke="currentColor" stroke-width="1.6"></circle><circle cx="17" cy="17.5" fill="var(--c-surface)" r="1.8" stroke="currentColor" stroke-width="1.6"></circle></svg></span>
+<b>Free delivery</b>
+<span>From €49, tracked</span>
+</div><div class="guar__item reveal">
+<span class="guar__ico"><svg aria-hidden="true" class="icon" focusable="false" viewbox="0 0 24 24"><path d="M9 7 5 11l4 4M5 11h9a5 5 0 0 1 0 10h-3" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path></svg></span>
+<b>30 days to return</b>
+<span>Changed your mind? We refund you</span>
+</div><div class="guar__item reveal">
+<span class="guar__ico"><svg aria-hidden="true" class="icon" focusable="false" viewbox="0 0 24 24"><rect fill="none" height="10" rx="2" stroke="currentColor" stroke-width="1.6" width="14" x="5" y="10"></rect><path d="M8 10V7.5a4 4 0 0 1 8 0V10" fill="none" stroke="currentColor" stroke-width="1.6"></path></svg></span>
+<b>Secure payment</b>
+<span>Shop Pay, Google Pay, Apple Pay, card</span>
+</div></div>
+</section>
+</div><div class="shopify-section section-reviews" id="shopify-section-template--30216265597254__reviews"><section class="block-pad reviews-sec">
+<div class="wrap">
+<p class="kicker">Reviews</p>
+<h2 class="h2">They see life in turquoise.</h2><p class="reviews__score"><span aria-hidden="true" class="stars">★★★★★</span> <b>4.8 / 5</b><span class="tag">Sample reviews</span></p><div class="reviews"><figure class="rev reveal">
+<span aria-label="5 out of 5 stars" class="stars" role="img">★★★★★</span>
+<blockquote>Two pairs for the price of one, I took Moorea and Bali. The blue to pink lenses are stunning in the sun.</blockquote>
+<figcaption><i>L</i><span>Léa B.</span></figcaption>
+</figure><figure class="rev reveal">
+<span aria-label="5 out of 5 stars" class="stars" role="img">★★★★★</span>
+<blockquote>Light, solid, and the case is really nice. Received in two days.</blockquote>
+<figcaption><i>H</i><span>Hugo D.</span></figcaption>
+</figure><figure class="rev reveal">
+<span aria-label="5 out of 5 stars" class="stars" role="img">★★★★★</span>
+<blockquote>I was afraid of the cat-eye shape, but Belize suits everyone. Best summer purchase.</blockquote>
+<figcaption><i>S</i><span>Sarah K.</span></figcaption>
+</figure></div><p class="reviews__note">Sample reviews: replace them with real reviews from your customers.</p></div>
+</section>
+</div><div class="shopify-section section-faq" id="shopify-section-template--30216265597254__faq"><section class="block-pad faq-sec">
+<div class="wrap wrap--narrow">
+<p class="kicker">Questions</p>
+<h2 class="h2">Everything you want to know.</h2>
+<div class="faq"><details class="acc">
+<summary>Do the lenses protect my eyes?</summary>
+<div class="acc__b rte"><p>Yes: every pair has UV400 category 3 lenses, which block 100% of UVA and UVB rays.</p></div>
+</details><details class="acc">
+<summary>How does 1 bought = 1 free work?</summary>
+<div class="acc__b rte"><p>Add two pairs to the bag: the cheaper one is free at checkout. It works for every two pairs.</p></div>
+</details><details class="acc">
+<summary>When will I receive my order?</summary>
+<div class="acc__b rte"><p>Orders leave within 24 hours and arrive in 48 to 72 hours.</p></div>
+</details><details class="acc">
+<summary>Can I return a pair?</summary>
+<div class="acc__b rte"><p>Yes, within 30 days, in its case and unworn.</p></div>
+</details><details class="acc">
+<summary>Which shape suits my face?</summary>
+<div class="acc__b rte"><p>Round faces: square frames (Signature). Square faces: round frames (Original). Everyone: cat-eye (Essentiel).</p></div>
+</details><details class="acc">
+<summary>Is payment secure?</summary>
+<div class="acc__b rte"><p>Yes: payment goes through the secure Shopify checkout. Shop Pay, Google Pay and Apple Pay never share your card number with us.</p></div>
+</details></div>
+</div>
+</section>
+</div>
+</main>
+
+<div class="shopify-section shopify-section-group-footer-group section-news" id="shopify-section-sections--30216263106886__newsletter"><section class="news-sec">
+<div class="wrap">
+<div class="news">
+<h2 class="news__t">Get 10% off your first pair.</h2>
+<p class="news__lead">One letter a month, no more. Unsubscribe in one click.</p><form accept-charset="UTF-8" action="#" class="news__f" data-demo-form="" id="Newsletter-sections--30216263106886__newsletter" method="post"><input name="form_type" type="hidden" value="customer"/><input name="utf8" type="hidden" value="✓"/><input name="contact[tags]" type="hidden" value="newsletter"/><label class="visually-hidden" for="Newsletter-sections--30216263106886__newsletter-email">Your email</label>
+<input autocapitalize="off" autocomplete="email" autocorrect="off" id="Newsletter-sections--30216263106886__newsletter-email" name="contact[email]" placeholder="Your email" required="" type="email"/>
+<button type="submit">Sign up</button></form><p class="news__legal">Demo store: your email is not saved.</p></div>
+</div>
+</section>
+</div><div class="shopify-section shopify-section-group-footer-group section-footer" id="shopify-section-sections--30216263106886__footer"><footer class="foot">
+<div class="foot__cols"><div class="foot__col foot__col--brand"><p class="logo logo--foot">LAGOA</p>
+<p class="foot__tag">See life in turquoise.</p></div><div class="foot__col foot__col--menu"><h2 class="foot__h">Shop</h2><ul class="foot__list">
+<li><a href="./collections/original/">Original</a></li><li><a href="./collections/signature/">Signature</a></li>
+<li><a href="./collections/essentiel/">Essentiel</a></li><li><a href="./collections/lunettes/">All the pairs</a></li></ul></div>
+<div class="foot__col foot__col--demo"><h2 class="foot__h">Demo store</h2><p class="foot__demo">LAGOA is a demonstration of a
+Shopify theme designed by Masquo. The brand is fictional, the photos were created with AI, nothing is sold and no payment
+is requested.</p><p class="foot__demo">IP address, approximate location (country, region, city), internet provider, page visited, source, browser and language are kept for 30 days, for security and statistics.</p><p class="foot__demo"><a href="https://masquo.com/" rel="noopener">masquo.com</a></p></div></div>
+<div class="foot__bottom">
+<ul aria-label="Payment methods" class="foot__pay"><li><svg aria-labelledby="pi-visa" class="foot__pay-icon" fill="none" height="24" role="img" viewbox="0 0 38 24" width="38" xmlns="http://www.w3.org/2000/svg"><title id="pi-visa">Visa</title><rect fill="none" height="23" rx="2.5" stroke="#000" stroke-opacity=".07" width="37" x=".5" y=".5"></rect><path d="M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z" fill="#142FBD" style="fill:#142FBD;fill:color(display-p3 0.0784 0.1843 0.7412);fill-opacity:1;"></path><path d="M35 1C36.1 1 37 1.9 37 3V21C37 22.1 36.1 23 35 23H3C1.9 23 1 22.1 1 21V3C1 1.9 1.9 1 3 1H35Z" fill="#1532CB" style="fill:#1532CB;fill:color(display-p3 0.0824 0.1961 0.7961);fill-opacity:1;"></path><path d="M29.5944 10.2167H29.2778C28.8556 11.2722 28.5389 11.8 28.2222 13.3833H30.2278C29.9111 11.8 29.9111 11.0611 29.5944 10.2167V10.2167ZM32.6556 16.4444H30.8611C30.7556 16.4444 30.7556 16.4444 30.65 16.3389L30.4389 15.3889L30.3333 15.1778H27.8C27.6944 15.1778 27.5889 15.1778 27.5889 15.3889L27.2722 16.3389C27.2722 16.4444 27.1667 16.4444 27.1667 16.4444H24.95L25.1611 15.9167L28.2222 8.73889C28.2222 8.21111 28.5389 8 29.0667 8H30.65C30.7556 8 30.8611 8 30.8611 8.21111L32.3389 15.0722C32.4444 15.4944 32.55 15.8111 32.55 16.2333C32.6556 16.3389 32.6556 16.3389 32.6556 16.4444V16.4444ZM18.5111 16.1278L18.9333 14.2278C19.0389 14.2278 19.1444 14.3333 19.1444 14.3333C19.8833 14.65 20.6222 14.8611 21.3611 14.7556C21.5722 14.7556 21.8889 14.65 22.1 14.5444C22.6278 14.3333 22.6278 13.8056 22.2056 13.3833C21.9944 13.1722 21.6778 13.0667 21.3611 12.8556C20.9389 12.6444 20.5167 12.4333 20.2 12.1167C18.9333 11.0611 19.3556 9.58333 20.0944 8.84444C20.7278 8.42222 21.0444 8 21.8889 8C23.1556 8 24.5278 8 25.1611 8.21111H25.2667C25.1611 8.84444 25.0556 9.37222 24.8444 10.0056C24.3167 9.79444 23.7889 9.58333 23.2611 9.58333C22.9444 9.58333 22.6278 9.58333 22.3111 9.68889C22.1 9.68889 21.9944 9.79444 21.8889 9.9C21.6778 10.1111 21.6778 10.4278 21.8889 10.6389L22.4167 11.0611C22.8389 11.2722 23.2611 11.4833 23.5778 11.6944C24.1056 12.0111 24.6333 12.5389 24.7389 13.1722C24.95 14.1222 24.6333 14.9667 23.7889 15.6C23.2611 16.0222 23.05 16.2333 22.3111 16.2333C20.8333 16.2333 19.6722 16.3389 18.7222 16.0222C18.6167 16.2333 18.6167 16.2333 18.5111 16.1278V16.1278ZM14.8167 16.4444C14.9222 15.7056 14.9222 15.7056 15.0278 15.3889C15.5556 13.0667 16.0833 10.6389 16.5056 8.31667C16.6111 8.10556 16.6111 8 16.8222 8H18.7222C18.5111 9.26667 18.3 10.2167 17.9833 11.3778C17.6667 12.9611 17.35 14.5444 16.9278 16.1278C16.9278 16.3389 16.8222 16.3389 16.6111 16.3389L14.8167 16.4444ZM5 8.21111C5 8.10556 5.21111 8 5.31667 8H8.90556C9.43333 8 9.85556 8.31667 9.96111 8.84444L10.9111 13.4889C10.9111 13.5944 10.9111 13.5944 11.0167 13.7C11.0167 13.5944 11.1222 13.5944 11.1222 13.5944L13.3389 8.21111C13.2333 8.10556 13.3389 8 13.4444 8H15.6611C15.6611 8.10556 15.6611 8.10556 15.5556 8.21111L12.2833 15.9167C12.1778 16.1278 12.1778 16.2333 12.0722 16.3389C11.9667 16.4444 11.7556 16.3389 11.5444 16.3389H9.96111C9.85556 16.3389 9.75 16.3389 9.75 16.1278L8.06111 9.58333C7.85 9.37222 7.53333 9.05556 7.11111 8.95C6.47778 8.63333 5.31667 8.42222 5.10556 8.42222L5 8.21111Z" fill="white" style="fill:white;fill-opacity:1;"></path></svg>
+</li><li><svg aria-labelledby="pi-master" class="foot__pay-icon" fill="none" height="24" role="img" viewbox="0 0 38 24" width="38" xmlns="http://www.w3.org/2000/svg"><title id="pi-master">Mastercard</title><rect fill="none" height="23" rx="2.5" stroke="#000" stroke-opacity=".07" width="37" x=".5" y=".5"></rect><path d="M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z" fill="#1C1C1C" style="fill:#1C1C1C;fill:color(display-p3 0.1098 0.1098 0.1098);fill-opacity:1;"></path><path d="M35 1C36.1 1 37 1.9 37 3V21C37 22.1 36.1 23 35 23H3C1.9 23 1 22.1 1 21V3C1 1.9 1.9 1 3 1H35Z" fill="#232323" style="fill:#232323;fill:color(display-p3 0.1373 0.1373 0.1373);fill-opacity:1;"></path><path d="M14.6364 19.2727C18.8538 19.2727 22.2727 15.8538 22.2727 11.6364C22.2727 7.41892 18.8538 4 14.6364 4C10.4189 4 7 7.41892 7 11.6364C7 15.8538 10.4189 19.2727 14.6364 19.2727Z" fill="#EB001B" style="fill:#EB001B;fill:color(display-p3 0.9216 0.0000 0.1059);fill-opacity:1;"></path><path d="M23.3637 19.2727C27.5811 19.2727 31 15.8538 31 11.6364C31 7.41892 27.5811 4 23.3637 4C19.1462 4 15.7273 7.41892 15.7273 11.6364C15.7273 15.8538 19.1462 19.2727 23.3637 19.2727Z" fill="#F79E1B" style="fill:#F79E1B;fill:color(display-p3 0.9686 0.6196 0.1059);fill-opacity:1;"></path><path d="M22.2727 11.6362C22.2727 9.01797 20.9637 6.72706 19 5.41797C17.0364 6.83615 15.7273 9.12706 15.7273 11.6362C15.7273 14.1452 17.0364 16.5452 19 17.8543C20.9637 16.5452 22.2727 14.2543 22.2727 11.6362Z" fill="#FF5F00" style="fill:#FF5F00;fill:color(display-p3 1.0000 0.3725 0.0000);fill-opacity:1;"></path></svg>
+</li><li><svg aria-labelledby="pi-american_express" class="foot__pay-icon" fill="none" height="24" role="img" viewbox="0 0 38 24" width="38" xmlns="http://www.w3.org/2000/svg"><title id="pi-american_express">American Express</title><rect fill="none" height="23" rx="2.5" stroke="#000" stroke-opacity=".07" width="37" x=".5" y=".5"></rect><path d="M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z" fill="#0071CE" style="fill:#0071CE;fill:color(display-p3 0.0000 0.4431 0.8078);fill-opacity:1;"></path><path d="M3 0.5H35C36.3348 0.5 37.5 1.58692 37.5 3V21C37.5 22.4239 36.4239 23.5 35 23.5H3C1.66524 23.5 0.5 22.4131 0.5 21V3C0.5 1.57614 1.57614 0.5 3 0.5Z" stroke="black" stroke-opacity="0.07" style="stroke:black;stroke-opacity:0.07;"></path><path d="M25.8662 6.33203V3H31L31.8662 5.5332L32.7334 3H37V14.2002H36.7998L34.8672 16.2656L36.7998 18.3594H37V21.2666H33.5996L31.9336 19.3994L30.2002 21.2666H19.4668V12.666H16L20.2666 3H24.4004L25.8662 6.33203ZM20.5996 20.2656H27V18.5322H22.666V17.3994H26.8662V15.666H22.666V14.5322H27V12.7988H20.5996V20.2656ZM30.5332 16.5322L27 20.2656H29.5996L31.8662 17.8662L34.0664 20.2656H36.7324L33.1992 16.4658L36.7324 12.7988H34.1328L31.8662 15.1992L29.7324 12.7988H27L30.5332 16.5322ZM17.666 11.7324H19.9326L20.5332 10.1992H23.999L24.666 11.7324H26.999L23.666 4.19922H20.999L17.666 11.7324ZM33.5996 4.19922L31.9326 8.86621L30.1992 4.19922H27V11.666H29.0664V6.39941L31 11.666H32.7998L34.7324 6.39941V11.666H36.7324V4.13281L33.5996 4.19922ZM23.2656 8.46582H21.2656L22.2656 5.99902L23.2656 8.46582Z" fill="white" style="fill:white;fill-opacity:1;"></path></svg>
+</li><li><svg aria-labelledby="pi-paypal" class="foot__pay-icon" height="24" role="img" viewbox="0 0 38 24" width="38" xmlns="http://www.w3.org/2000/svg"><title id="pi-paypal">PayPal</title><path d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z" opacity=".07"></path><path d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32" fill="#fff"></path><path d="M23.9 8.3c.2-1 0-1.7-.6-2.3-.6-.7-1.7-1-3.1-1h-4.1c-.3 0-.5.2-.6.5L14 15.6c0 .2.1.4.3.4H17l.4-3.4 1.8-2.2 4.7-2.1z" fill="#003087"></path><path d="M23.9 8.3l-.2.2c-.5 2.8-2.2 3.8-4.6 3.8H18c-.3 0-.5.2-.6.5l-.6 3.9-.2 1c0 .2.1.4.3.4H19c.3 0 .5-.2.5-.4v-.1l.4-2.4v-.1c0-.2.3-.4.5-.4h.3c2.1 0 3.7-.8 4.1-3.2.2-1 .1-1.8-.4-2.4-.1-.5-.3-.7-.5-.8z" fill="#3086C8"></path><path d="M23.3 8.1c-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.3-.1-.7-.1-1.1-.1h-3c-.1 0-.2 0-.2.1-.2.1-.3.2-.3.4l-.7 4.4v.1c0-.3.3-.5.6-.5h1.3c2.5 0 4.1-1 4.6-3.8v-.2c-.1-.1-.3-.2-.5-.2h-.1z" fill="#012169"></path></svg></li><li><svg aria-labelledby="pi-diners_club" class="foot__pay-icon" height="24" role="img" viewbox="0 0 38 24" width="38" xmlns="http://www.w3.org/2000/svg"><title id="pi-diners_club">Diners Club</title><path d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z" opacity=".07"></path><path d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32" fill="#fff"></path><path d="M12 12v3.7c0 .3-.2.3-.5.2-1.9-.8-3-3.3-2.3-5.4.4-1.1 1.2-2 2.3-2.4.4-.2.5-.1.5.2V12zm2 0V8.3c0-.3 0-.3.3-.2 2.1.8 3.2 3.3 2.4 5.4-.4 1.1-1.2 2-2.3 2.4-.4.2-.4.1-.4-.2V12zm7.2-7H13c3.8 0 6.8 3.1 6.8 7s-3 7-6.8 7h8.2c3.8 0 6.8-3.1 6.8-7s-3-7-6.8-7z" fill="#3086C8"></path></svg></li><li><svg aria-labelledby="pi-discover" class="foot__pay-icon" fill="none" height="24" role="img" viewbox="0 0 38 24" width="38" xmlns="http://www.w3.org/2000/svg"><title id="pi-discover">Discover</title><path d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z" fill="#000" opacity=".07"></path><path d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32z" fill="#fff"></path><path d="M3.57 7.16H2v5.5h1.57c.83 0 1.43-.2 1.96-.63.63-.52 1-1.3 1-2.11-.01-1.63-1.22-2.76-2.96-2.76zm1.26 4.14c-.34.3-.77.44-1.47.44h-.29V8.1h.29c.69 0 1.11.12 1.47.44.37.33.59.84.59 1.37 0 .53-.22 1.06-.59 1.39zm2.19-4.14h1.07v5.5H7.02v-5.5zm3.69 2.11c-.64-.24-.83-.4-.83-.69 0-.35.34-.61.8-.61.32 0 .59.13.86.45l.56-.73c-.46-.4-1.01-.61-1.62-.61-.97 0-1.72.68-1.72 1.58 0 .76.35 1.15 1.35 1.51.42.15.63.25.74.31.21.14.32.34.32.57 0 .45-.35.78-.83.78-.51 0-.92-.26-1.17-.73l-.69.67c.49.73 1.09 1.05 1.9 1.05 1.11 0 1.9-.74 1.9-1.81.02-.89-.35-1.29-1.57-1.74zm1.92.65c0 1.62 1.27 2.87 2.9 2.87.46 0 .86-.09 1.34-.32v-1.26c-.43.43-.81.6-1.29.6-1.08 0-1.85-.78-1.85-1.9 0-1.06.79-1.89 1.8-1.89.51 0 .9.18 1.34.62V7.38c-.47-.24-.86-.34-1.32-.34-1.61 0-2.92 1.28-2.92 2.88zm12.76.94l-1.47-3.7h-1.17l2.33 5.64h.58l2.37-5.64h-1.16l-1.48 3.7zm3.13 1.8h3.04v-.93h-1.97v-1.48h1.9v-.93h-1.9V8.1h1.97v-.94h-3.04v5.5zm7.29-3.87c0-1.03-.71-1.62-1.95-1.62h-1.59v5.5h1.07v-2.21h.14l1.48 2.21h1.32l-1.73-2.32c.81-.17 1.26-.72 1.26-1.56zm-2.16.91h-.31V8.03h.33c.67 0 1.03.28 1.03.82 0 .55-.36.85-1.05.85z" fill="#231F20"></path><path d="M20.16 12.86a2.931 2.931 0 100-5.862 2.931 2.931 0 000 5.862z" fill="url(#pi-paint0_linear)"></path><path d="M20.16 12.86a2.931 2.931 0 100-5.862 2.931 2.931 0 000 5.862z" fill="url(#pi-paint1_linear)" opacity=".65"></path><path d="M36.57 7.506c0-.1-.07-.15-.18-.15h-.16v.48h.12v-.19l.14.19h.14l-.16-.2c.06-.01.1-.06.1-.13zm-.2.07h-.02v-.13h.02c.06 0 .09.02.09.06 0 .05-.03.07-.09.07z" fill="#231F20"></path><path d="M36.41 7.176c-.23 0-.42.19-.42.42 0 .23.19.42.42.42.23 0 .42-.19.42-.42 0-.23-.19-.42-.42-.42zm0 .77c-.18 0-.34-.15-.34-.35 0-.19.15-.35.34-.35.18 0 .33.16.33.35 0 .19-.15.35-.33.35z" fill="#231F20"></path><path d="M37 12.984S27.09 19.873 8.976 23h26.023a2 2 0 002-1.984l.024-3.02L37 12.985z" fill="#F48120"></path><defs><lineargradient gradientunits="userSpaceOnUse" id="pi-paint0_linear" x1="21.657" x2="19.632" y1="12.275" y2="9.104"><stop stop-color="#F89F20"></stop><stop offset=".25" stop-color="#F79A20"></stop><stop offset=".533" stop-color="#F68D20"></stop><stop offset=".62" stop-color="#F58720"></stop><stop offset=".723" stop-color="#F48120"></stop><stop offset="1" stop-color="#F37521"></stop></lineargradient><lineargradient gradientunits="userSpaceOnUse" id="pi-paint1_linear" x1="21.338" x2="18.378" y1="12.232" y2="6.446"><stop stop-color="#F58720"></stop><stop offset=".359" stop-color="#E16F27"></stop><stop offset=".703" stop-color="#D4602C"></stop><stop offset=".982" stop-color="#D05B2E"></stop></lineargradient></defs></svg></li></ul><p class="foot__copy">© 2026 <a href="./" title="">LAGOA</a></p>
+</div>
+</footer>
+</div>
+
+<div class="shopify-section" id="shopify-section-cart-drawer"><cart-drawer aria-hidden="true" class="drawer" id="CartDrawer">
+<div class="drawer__veil" data-close=""></div>
+<aside aria-labelledby="CartDrawerTitle" aria-modal="true" class="drawer__panel" data-panel="" role="dialog" tabindex="-1">
+<div class="drawer__inner" id="CartDrawerInner">
+<header class="drawer__head">
+<h2 class="drawer__title" id="CartDrawerTitle">Your bag is empty.</h2>
+<button aria-label="Close" class="drawer__x" data-close="" type="button"><svg aria-hidden="true" class="icon" focusable="false" viewbox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg></button>
+</header><div class="drawer__empty">
+<p>Pick a pair: the second one is on us.</p>
+<a class="btn-dream" href="collections/lunettes/"><span>Continue shopping</span><i aria-hidden="true" class="btn-dream__shine"></i></a>
+</div></div>
+</aside>
+</cart-drawer>
+</div>
+<div aria-live="polite" class="toast" id="PrismeToast" role="status"></div>
+
+</body>
+</html>

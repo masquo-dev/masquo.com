@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- security: only this site may load anything (fonts are hosted here); no inline script.
+       m.js hides the page if another site shows it inside a frame.
+       The contact form never submits by itself (form-action 'none'): script.js sends it to my own Cloudflare service.
+       Cloudflare Turnstile (challenges.cloudflare.com) checks that a human fills in the form; it loads only near the form. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://challenges.cloudflare.com; style-src 'self'; font-src 'self'; img-src 'self' data:; media-src 'self'; connect-src 'self' https://visites.lagon-stats.workers.dev; frame-src https://challenges.cloudflare.com; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Masquo · Websites, online stores, automations, Excel &amp; Android apps</title>
+  <meta name="description" content="Your online business, built and automated, with support throughout the project: websites and online stores, automations with n8n, Make, Zapier and Python, Excel and Google Sheets dashboards, and Android apps.">
+  <meta name="theme-color" content="#0d0617">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Masquo · Your online store, built and automated">
+  <meta property="og:description" content="Websites and online stores, automations, Excel dashboards and Android apps, with support throughout the project, from the first conversation to after launch.">
+  <link rel="canonical" href="https://masquo.com/">
+  <meta property="og:url" content="https://masquo.com/">
+  <meta property="og:image" content="https://masquo.com/media/og-image.jpg?v=3">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Masquo: your online store, built and automated">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="alternate" hreflang="en" href="https://masquo.com/?lang=en">
+  <link rel="alternate" hreflang="fr" href="https://masquo.com/?lang=fr">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ffc23a'/%3E%3Cstop offset='.55' stop-color='%23ff6a4d'/%3E%3Cstop offset='1' stop-color='%23e0247f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='%230d0617'/%3E%3Ccircle cx='16' cy='22' r='9' fill='url(%23g)'/%3E%3Crect x='4' y='21' width='24' height='1.6' fill='%23ffd27a'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="fonts/polices.css">
+  <link rel="stylesheet" href="style.css?v=20261127c">
+<script src="/m.js?v=2" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i="skip">Skip to content</a>
+
+  <!-- ============ MENU ============ -->
+  <header class="nav" id="top">
+    <div class="wrap nav__in">
+      <a class="logo" href="#main" aria-label="Masquo">masquo<b>.</b></a>
+      <nav class="nav__links" aria-label="Menu">
+        <a href="#work" data-i="nav.work">Work</a>
+        <a href="#services" data-i="nav.services">Services</a>
+        <a href="#support" data-i="nav.support">Support</a>
+        <a href="#faq" data-i="nav.faq">FAQ</a>
+      </nav>
+      <div class="lang" role="group" aria-label="Language / Langue">
+        <button type="button" data-lang="fr" lang="fr">FR</button><span aria-hidden="true">·</span><button type="button" data-lang="en" lang="en">EN</button>
+      </div>
+      <a class="pill pill--sm" href="#contact"><span class="pill__long" data-i="cta.talk">Let's talk about your project</span><span class="pill__short">Contact</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ 1. HAUT DE PAGE : ciel de nuit, horizon qui brûle ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="sky" aria-hidden="true"><span class="sky__sun"></span><span class="sky__line"></span></div>
+      <div class="grain" aria-hidden="true"></div>
+      <div class="wrap hero__in">
+        <div class="hero__txt">
+          <p class="avail"><i></i><span data-i="h.tag">Available for new projects</span></p>
+          <h1 id="hero-title" data-i="h.title"><span>Your online store,</span><span>built and</span><span><em>automated.</em></span></h1>
+          <p class="lead" data-i="h.lead">Websites and online stores, automations, Excel dashboards and Android apps. I build them and support you throughout the project, from the first conversation to after launch.</p>
+          <div class="btns">
+            <a class="pill" href="#contact"><span data-i="cta.talk">Let's talk about your project</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="pill pill--ghost" href="#work" data-i="h.b2">See my work</a>
+          </div>
+          <ul class="facts">
+            <li data-i="h.f1"><b>24 h</b> to reply</li>
+            <li data-i="h.f2"><b>Fixed price</b> before we start</li>
+            <li data-i="h.f3"><b>End-to-end</b> support</li>
+          </ul>
+        </div>
+        <div class="deck" aria-label="Three of my projects">
+          <a class="card c1" href="#solaria" data-go="solaria"><img decoding="async" src="media/v2/work-solaria-card.jpg" alt="" width="1600" height="1000"><span class="card__cap" data-i="d.c1">Solaria · website</span></a>
+          <a class="card c2" href="#autopilot" data-go="autopilot"><img decoding="async" src="media/v2/panel-auto.webp" alt="" width="1100" height="581"><span class="card__cap" data-i="d.c2">Order Autopilot · automation</span></a>
+          <a class="card c3" href="#lagoa" data-go="lagoa"><img decoding="async" src="media/v2/work-lagoa.jpg?v=2" data-src-fr="media/v2/work-lagoa-fr.jpg?v=2" alt="" width="1600" height="1000"><span class="card__cap" data-i="d.c3">LAGOA · Shopify store</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- bandeau des outils (vrais logos, qui défilent) -->
+    <div class="tools">
+      <p class="tools__t" data-i="tools">Tools I use</p>
+      <div class="tools__view">
+        <ul class="tools__track">
+          <li><img decoding="async" src="media/v2/logos/shopify.png" alt="" width="40" height="40">Shopify</li>
+          <li><img decoding="async" src="media/v2/logos/n8n.png" alt="" width="40" height="40">n8n</li>
+          <li><img decoding="async" src="media/v2/logos/make.png" alt="" width="40" height="40">Make</li>
+          <li><img decoding="async" src="media/v2/logos/zapier.png" alt="" width="40" height="40">Zapier</li>
+          <li><img decoding="async" src="media/v2/logos/python.png" alt="" width="40" height="40">Python</li>
+          <li><img decoding="async" src="media/v2/logos/openai.png" alt="" width="40" height="40">ChatGPT</li>
+          <li><img decoding="async" src="media/v2/logos/claude.png" alt="" width="40" height="40">Claude Code</li>
+          <li><img decoding="async" src="media/v2/logos/excel.png" alt="" width="40" height="40">Excel</li>
+          <li><img decoding="async" src="media/v2/logos/googlesheets.png" alt="" width="40" height="40">Google Sheets</li>
+          <li><img decoding="async" src="media/v2/logos/android.png" alt="" width="40" height="40">Android</li>
+          <li><img decoding="async" src="media/v2/logos/kotlin.png" alt="" width="40" height="40">Kotlin</li>
+          <li><img decoding="async" src="media/v2/logos/androidstudio.png" alt="" width="40" height="40">Android Studio</li>
+          <li><img decoding="async" src="media/v2/logos/html.png" alt="" width="40" height="40">HTML</li>
+          <li><img decoding="async" src="media/v2/logos/css.png" alt="" width="40" height="40">CSS</li>
+          <li><img decoding="async" src="media/v2/logos/javascript.png" alt="" width="40" height="40">JavaScript</li>
+          <li><img decoding="async" src="media/v2/logos/threejs.png" alt="" width="40" height="40">Three.js</li>
+          <li><img decoding="async" src="media/v2/logos/fastapi.png" alt="" width="40" height="40">FastAPI</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ============ 2. RÉALISATIONS : grands panneaux à faire glisser ============ -->
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="sec-n">01</p>
+          <div>
+            <h2 id="work-title" data-i="w.title">Work</h2>
+            <p class="sec-lead" data-i="w.lead">Real projects you can open and try.</p>
+          </div>
+          <div class="slide-ctl">
+            <span class="drag" data-i="w.drag">Drag</span>
+            <button type="button" class="arrow" data-dir="-1" aria-label="Previous"><svg viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+            <button type="button" class="arrow" data-dir="1" aria-label="Next"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </div>
+        </div>
+        <div class="tabs" role="group" aria-label="Categories">
+          <button type="button" data-f="all" aria-pressed="true"><span data-i="t.all">All</span> <small>8</small></button>
+          <button type="button" data-f="shopify"><span data-i="t.shopify">Shopify stores</span> <small>2</small></button>
+          <button type="button" data-f="web"><span data-i="t.web">Websites</span> <small>1</small></button>
+          <button type="button" data-f="auto"><span data-i="t.auto">Automations</span> <small>2</small></button>
+          <button type="button" data-f="excel"><span data-i="t.excel">Excel</span> <small>2</small></button>
+          <button type="button" data-f="android"><span data-i="t.android">Android apps</span> <small>1</small></button>
+        </div>
+      </div>
+
+      <div class="track" id="track">
+        <article class="panel" id="lagoa" data-cat="shopify">
+          <img decoding="async" src="media/v2/work-lagoa.jpg?v=2" data-src-fr="media/v2/work-lagoa-fr.jpg?v=2" alt="" width="1600" height="1000" draggable="false">
+          <div class="panel__top"><span data-i="c.shopify">Shopify store</span><span>01 / 08</span></div>
+          <div class="panel__txt">
+            <h3 data-i="p1.t">LAGOA, 24 pairs of sunglasses</h3>
+            <p data-i="p1.d">A Shopify theme: the lagoon seen through the lenses, every pair changes live, and the free pair is the customer’s choice.</p>
+            <div class="panel__btns">
+              <a class="pill pill--sm" href="lagoa/" data-href-fr="lagoa/fr/" target="_blank" rel="noopener"><span data-i="a.store">Open the store</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+              <a class="same" href="#contact" data-need="shopify" data-i="a.same">I want the same →</a>
+            </div>
+          </div>
+        </article>
+        <article class="panel" id="autopilot" data-cat="auto">
+          <img decoding="async" src="media/order-autopilot-poster.jpg" data-src-fr="media/order-autopilot-poster-fr.jpg" alt="" width="1920" height="1080" draggable="false">
+          <div class="panel__top"><span data-i="c.auto">Automation</span><span>02 / 08</span></div>
+          <div class="panel__txt">
+            <h3 data-i="p2.t">Order Autopilot, the store that runs itself</h3>
+            <p data-i="p2.d">Payment, fraud check, stock, invoice, label and emails for every order. Measured in tests: about 2 s from order to label, 0 orders lost during forced outages.</p>
+            <div class="panel__btns">
+              <a class="pill pill--sm" href="media/order-autopilot-demo.mp4" data-video data-video-fr="media/order-autopilot-demo-fr.mp4" data-video-tall="media/order-autopilot-vertical.mp4" data-video-tall-fr="media/order-autopilot-vertical-fr.mp4"><svg class="play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span data-i="a.video">Watch the video</span></a>
+              <a class="same" href="#contact" data-need="automation" data-i="a.same">I want the same →</a>
+            </div>
+          </div>
+        </article>
+        <article class="panel" id="solaria" data-cat="web">
+          <img decoding="async" src="media/v2/work-solaria-card.jpg" alt="" width="1600" height="1000" draggable="false">
+          <div class="panel__top"><span data-i="c.web">Website</span><span>03 / 08</span></div>
+          <div class="panel__txt">
+            <h3 data-i="p3.t">Solaria, 12 luxury villas</h3>
+            <p data-i="p3.d">Real videos, 3D materials, a map of available villas and real architect plans with computed areas.</p>
+            <div class="panel__btns">
+              <a class="pill pill--sm" href="solaria/" target="_blank" rel="noopener"><span data-i="a.site">Open the website</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+              <a class="same" href="#contact" data-need="website" data-i="a.same">I want the same →</a>
+            </div>
+          </div>
+        </article>
+        <article class="panel" data-cat="shopify">
+          <img decoding="async" src="media/v2/work-shopify.jpg?v=2" alt="" width="1600" height="1000" draggable="false">
+          <div class="panel__top"><span data-i="c.shopify">Shopify store</span><span>04 / 08</span></div>
+          <div class="panel__txt">
+            <h3 data-i="p4.t">Prisme, a fragrance engraved with a name</h3>
+            <p data-i="p4.d">The name is engraved live on the bottle, with a slide-out cart and express checkout.</p>
+            <div class="panel__btns">
+              <a class="pill pill--sm" href="brume/" target="_blank" rel="noopener"><span data-i="a.store">Open the store</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+              <a class="same" href="#contact" data-need="shopify" data-i="a.same">I want the same →</a>
+            </div>
+          </div>
+        </article>
+        <article class="panel" data-cat="android">
+          <img decoding="async" src="media/v2/work-android.jpg" alt="" width="1600" height="1000" draggable="false">
+          <div class="panel__top"><span data-i="c.android">Android app</span><span>05 / 08</span></div>
+          <div class="panel__txt">
+            <h3 data-i="p5.t">MesGigas and Bolide</h3>
+            <p data-i="p5.d">Two complete Android apps used every day: mobile data tracking with alerts, and flashcards with spaced repetition.</p>
+            <div class="panel__btns">
+              <a class="pill pill--sm" href="media/android-apps-demo.mp4" data-video data-video-fr="media/android-apps-demo-fr.mp4"><svg class="play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg><span data-i="a.video">Watch the video</span></a>
+              <a class="same" href="#contact" data-need="android" data-i="a.same">I want the same →</a>
+            </div>
+          </div>
+        </article>
+        <article class="panel" data-cat="excel">
+          <img decoding="async" src="media/work/dashboard.jpg" alt="" width="1600" height="1000" draggable="false">
+          <div class="panel__top"><span>Excel</span><span>06 / 08</span></div>
+          <div class="panel__txt">
+            <h3 data-i="p6.t">A year of sales on one page</h3>
+            <p data-i="p6.d">1,830 orders turned into 8 key figures, monthly sales, best products and regions.</p>
+            <div class="panel__btns">
+              <a class="pill pill--sm" href="media/work/dashboard-full.jpg" data-lightbox><span data-i="a.full">See it full size</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></a>
+              <a class="same" href="#contact" data-need="dashboard" data-i="a.same">I want the same →</a>
+            </div>
+          </div>
+        </article>
+        <article class="panel" data-cat="excel">
+          <img decoding="async" src="media/work/invoice.jpg" alt="" width="1600" height="1000" draggable="false">
+          <div class="panel__top"><span>Excel</span><span>07 / 08</span></div>
+          <div class="panel__txt">
+            <h3 data-i="p7.t">Quotes and invoices in Excel</h3>
+            <p data-i="p7.d">Client and product lists, totals that calculate themselves, and a paid, unpaid or overdue history.</p>
+            <div class="panel__btns">
+              <a class="pill pill--sm" href="media/work/invoice-full.jpg" data-lightbox><span data-i="a.full">See it full size</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></a>
+              <a class="same" href="#contact" data-need="dashboard" data-i="a.same">I want the same →</a>
+            </div>
+          </div>
+        </article>
+        <article class="panel" data-cat="auto">
+          <img decoding="async" src="media/work/scraper.jpg" alt="" width="1600" height="1000" draggable="false">
+          <div class="panel__top"><span data-i="c.auto">Automation</span><span>08 / 08</span></div>
+          <div class="panel__txt">
+            <h3 data-i="p8.t">Data collection robot + Excel report</h3>
+            <p data-i="p8.d">A Python robot reads a 1,000-book online catalogue and delivers a clean Excel report in about a minute.</p>
+            <div class="panel__btns">
+              <a class="pill pill--sm" href="media/work/scraper-full.jpg" data-lightbox><span data-i="a.full">See it full size</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></a>
+              <a class="same" href="#contact" data-need="automation" data-i="a.same">I want the same →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <p class="wrap note" data-i="w.note">Names and figures shown in these examples are demonstration data.</p>
+    </section>
+
+    <!-- ============ 3. SERVICES : 4 lignes, sans prix ============ -->
+    <section class="sec" id="services" aria-labelledby="services-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="sec-n">02</p>
+          <div><h2 id="services-title" data-i="s.title">What I can build for you</h2></div>
+        </div>
+        <ol class="svc">
+          <li class="svc__row" data-reveal>
+            <img decoding="async" src="media/v2/logos/html.png" alt="" width="40" height="40">
+            <div><h3 data-i="s1.t">Website or online store</h3><p data-i="s1.p">A custom website or online store that looks great on phones, with Shopify or without.</p></div>
+            <p class="svc__meta"><b data-i="s1.d">from 3 days</b><span data-i="s.q">fixed-price quote</span></p>
+            <a class="pill pill--ghost pill--sm" href="#contact" data-need="website" data-i="s.talk">Talk about it</a>
+          </li>
+          <li class="svc__row" data-reveal>
+            <img decoding="async" src="media/v2/logos/n8n.png" alt="" width="40" height="40">
+            <div><h3 data-i="s2.t">Automation</h3><p data-i="s2.p">Orders, invoices, emails and reports handled automatically with n8n, Make, Zapier or Python, plus an AI step when it helps.</p></div>
+            <p class="svc__meta"><b data-i="s2.d">from 3 days</b><span data-i="s.q">fixed-price quote</span></p>
+            <a class="pill pill--ghost pill--sm" href="#contact" data-need="automation" data-i="s.talk">Talk about it</a>
+          </li>
+          <li class="svc__row" data-reveal>
+            <img decoding="async" src="media/v2/logos/excel.png" alt="" width="40" height="40">
+            <div><h3 data-i="s3.t">Excel or Google Sheets dashboard</h3><p data-i="s3.p">Your numbers on one clear page, with invoices and trackers that calculate themselves.</p></div>
+            <p class="svc__meta"><b data-i="s3.d">from 2 days</b><span data-i="s.q">fixed-price quote</span></p>
+            <a class="pill pill--ghost pill--sm" href="#contact" data-need="dashboard" data-i="s.talk">Talk about it</a>
+          </li>
+          <li class="svc__row" data-reveal>
+            <img decoding="async" src="media/v2/logos/android.png" alt="" width="40" height="40">
+            <div><h3 data-i="s4.t">Android app</h3><p data-i="s4.p">Your idea as an app to install, with the source code. I also fix and update existing apps.</p></div>
+            <p class="svc__meta"><b data-i="s4.d">from 5 days</b><span data-i="s.q">fixed-price quote</span></p>
+            <a class="pill pill--ghost pill--sm" href="#contact" data-need="android" data-i="s.talk">Talk about it</a>
+          </li>
+        </ol>
+        <p class="also" data-i="s.also">Also: AI chatbots, web scraping, landing pages and API integrations.</p>
+      </div>
+    </section>
+
+    <!-- ============ 3. ACCOMPAGNEMENT : tous les aspects du projet ============ -->
+    <section class="sec sec--support" id="support" aria-labelledby="support-title">
+      <div class="wrap support">
+        <div class="sec-head sec-head--col support__head">
+          <p class="sec-n">03</p>
+          <div>
+            <h2 id="support-title" data-i="sp.title">Beyond building, <em>I support you</em> on the whole project</h2>
+            <p class="sec-lead" data-i="sp.lead">You’re never on your own: from the first conversation to after launch, I’m with you at every step.</p>
+            <a class="pill pill--ghost support__cta" href="#contact" data-i="sp.cta">Tell me about your project</a>
+          </div>
+        </div>
+        <ol class="aspects">
+          <li data-reveal><span class="aspects__n">01</span><div><h3 data-i="sp1.t">Before</h3><p data-i="sp1.p">We talk about your project, so I understand exactly what you want.</p></div></li>
+          <li data-reveal><span class="aspects__n">02</span><div><h3 data-i="sp2.t">During</h3><p data-i="sp2.p">I keep you updated at every step: you see your project take shape and you give your feedback.</p></div></li>
+          <li data-reveal><span class="aspects__n">03</span><div><h3 data-i="sp3.t">After</h3><p data-i="sp3.p">14 days of free fixes, then I stay available for your questions and to help your project grow.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ 4. MÉTHODE ============ -->
+    <section class="sec sec--glow" id="process" aria-labelledby="process-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="sec-n">04</p>
+          <div><h2 id="process-title" data-i="m.title">Simple, from the first message to delivery</h2></div>
+        </div>
+        <ol class="steps">
+          <li data-reveal><span class="steps__n">1</span><h3 data-i="m1.t">You describe</h3><p data-i="m1.p">Two minutes with the form: your idea, your tools, your budget.</p></li>
+          <li data-reveal><span class="steps__n">2</span><h3 data-i="m2.t">I reply within 24 h</h3><p data-i="m2.p">A clear plan, a deadline and a fixed price. You decide, with no commitment.</p></li>
+          <li data-reveal><span class="steps__n">3</span><h3 data-i="m3.t">I build</h3><p data-i="m3.p">You get a preview to try, and you ask for changes.</p></li>
+          <li data-reveal><span class="steps__n">4</span><h3 data-i="m4.t">It’s delivered</h3><p data-i="m4.p">Source files included, then 14 days of free fixes.</p></li>
+        </ol>
+        <p class="pay" data-i="m.pay">Secure payment, only once the price suits you. You never need to give me a password.</p>
+      </div>
+    </section>
+
+    <!-- ============ 5. QUI SUIS-JE (sans visage) ============ -->
+    <section class="sec" id="about" aria-labelledby="about-title">
+      <div class="wrap about">
+        <p class="sec-n">05</p>
+        <div>
+          <h2 id="about-title" data-i="ab.title">Behind Masquo, <em>one single contact</em></h2>
+          <p class="about__p" data-i="ab.p">I build stores, automations and apps from A to Z. Not just pictures: every project on this page really works, you can open it and try it. You always talk to the same person, from the first conversation to after launch.</p>
+          <ul class="about__facts">
+            <li><b data-i="ab.f1">French · English</b><span data-i="ab.f1s">clients all over the world</span></li>
+            <li><b data-i="ab.f2">8 projects</b><span data-i="ab.f2s">to open on this site</span></li>
+            <li><b data-i="ab.f3">Source code</b><span data-i="ab.f3s">delivered with every project</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. QUESTIONS ============ -->
+    <section class="sec" id="faq" aria-labelledby="faq-title">
+      <div class="wrap faq">
+        <div class="sec-head sec-head--col">
+          <p class="sec-n">06</p>
+          <h2 id="faq-title" data-i="q.title">Questions I’m often asked</h2>
+        </div>
+        <div class="faq__list">
+          <details open><summary data-i="q1">How much does it cost?</summary><p data-i="q1a">Every project is different. After your message, I send you a fixed price before starting. No surprises later.</p></details>
+          <details><summary data-i="q2">How long does it take?</summary><p data-i="q2a">A few days for a store or a simple automation, one to three weeks for a full project. The deadline is written in the quote.</p></details>
+          <details><summary data-i="q3">How does payment work?</summary><p data-i="q3a">Through a secure payment, only once the price and the deadline suit you.</p></details>
+          <details><summary data-i="q4">Do I have to give you my passwords?</summary><p data-i="q4a">No. On Shopify, you invite me as a collaborator. For the rest, limited access is enough.</p></details>
+          <details><summary data-i="q5">What if I want changes?</summary><p data-i="q5a">Changes are included during the build, then 14 days of free fixes after delivery.</p></details>
+          <details><summary data-i="q6">Who owns what is delivered?</summary><p data-i="q6a">You do. The source files are included.</p></details>
+          <details><summary data-i="q7">Do you help after delivery?</summary><p data-i="q7a">Yes. You get 14 days of free fixes, then I stay available to help your project grow.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 7. CONTACT : formulaire « Parlons de votre projet » ============ -->
+    <section class="contact" id="contact" aria-labelledby="cta-title">
+      <div class="sky sky--low" aria-hidden="true"><span class="sky__sun"></span><span class="sky__line"></span></div>
+      <div class="wrap contact__in">
+        <div class="contact__intro">
+          <p class="sec-n">07</p>
+          <h2 id="cta-title" data-i="c.title">Let's talk about your <em>project</em></h2>
+          <p class="contact__lead" data-i="c.p">Describe your idea in two minutes. I reply by email, usually within 24 hours, with a clear plan and a fixed price. No commitment.</p>
+          <ol class="contact__steps">
+            <li><span>1</span><p data-i="c.s1">You describe your project here</p></li>
+            <li><span>2</span><p data-i="c.s2">I reply by email with a plan and a fixed price</p></li>
+            <li><span>3</span><p data-i="c.s3">You approve, and I get to work</p></li>
+          </ol>
+        </div>
+
+        <form class="pform" id="pform" novalidate data-endpoint="https://visites.lagon-stats.workers.dev/b" data-sitekey="0x4AAAAAAGU3cuY-btNWmljS" aria-labelledby="cta-title">
+          <div class="pform__body">
+            <fieldset class="pf">
+              <legend class="pf__l" data-i="f.need">What would you like to build?</legend>
+              <div class="chips">
+                <label class="chip"><input type="checkbox" name="need" value="shopify"><span><img decoding="async" src="media/v2/logos/shopify.png" alt="" width="24" height="24"><b data-i="f.n1">Shopify store</b></span></label>
+                <label class="chip"><input type="checkbox" name="need" value="automation"><span><img decoding="async" src="media/v2/logos/n8n.png" alt="" width="24" height="24"><b data-i="f.n2">Automation</b></span></label>
+                <label class="chip"><input type="checkbox" name="need" value="dashboard"><span><img decoding="async" src="media/v2/logos/excel.png" alt="" width="24" height="24"><b data-i="f.n3">Excel / Sheets dashboard</b></span></label>
+                <label class="chip"><input type="checkbox" name="need" value="android"><span><img decoding="async" src="media/v2/logos/android.png" alt="" width="24" height="24"><b data-i="f.n4">Android app</b></span></label>
+                <label class="chip"><input type="checkbox" name="need" value="website"><span><img decoding="async" src="media/v2/logos/html.png" alt="" width="24" height="24"><b data-i="f.n5">Website</b></span></label>
+                <label class="chip"><input type="checkbox" name="need" value="other"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z"/></svg><b data-i="f.n6">Something else</b></span></label>
+              </div>
+            </fieldset>
+            <div class="pf-row">
+              <label class="pf"><span class="pf__l" data-i="f.name">Your name</span><input name="name" type="text" autocomplete="name" maxlength="80" required></label>
+              <label class="pf"><span class="pf__l" data-i="f.email">Your email</span><input name="email" type="email" autocomplete="email" inputmode="email" spellcheck="false" maxlength="120" required></label>
+            </div>
+            <label class="pf"><span class="pf__l"><span data-i="f.shop">Your current store or website</span> <small data-i="f.opt">(optional)</small></span><input name="shop" type="text" autocomplete="url" inputmode="url" spellcheck="false" maxlength="200" placeholder="mystore.com" data-i-ph="f.shop.ph"></label>
+            <label class="pf"><span class="pf__l" data-i="f.goal">Your goal</span><textarea name="goal" rows="5" maxlength="2000" required placeholder="Example: I sell candles on Etsy and want my own Shopify store, with invoices sent automatically." data-i-ph="f.goal.ph"></textarea><span class="pf__count" aria-hidden="true">0 / 2000</span></label>
+            <fieldset class="pf">
+              <legend class="pf__l" data-i="f.budget">Your budget</legend>
+              <div class="chips">
+                <label class="chip chip--sm"><input type="radio" name="budget" value="lt300"><span><b data-i="f.b1">Under $300</b></span></label>
+                <label class="chip chip--sm"><input type="radio" name="budget" value="300-1000"><span><b data-i="f.b2">$300 to $1,000</b></span></label>
+                <label class="chip chip--sm"><input type="radio" name="budget" value="1000-3000"><span><b data-i="f.b3">$1,000 to $3,000</b></span></label>
+                <label class="chip chip--sm"><input type="radio" name="budget" value="gt3000"><span><b data-i="f.b4">Over $3,000</b></span></label>
+                <label class="chip chip--sm"><input type="radio" name="budget" value="unknown"><span><b data-i="f.b5">Not sure yet</b></span></label>
+              </div>
+            </fieldset>
+            <fieldset class="pf">
+              <legend class="pf__l" data-i="f.when">When do you need it?</legend>
+              <div class="chips">
+                <label class="chip chip--sm"><input type="radio" name="deadline" value="asap"><span><b data-i="f.d1">As soon as possible</b></span></label>
+                <label class="chip chip--sm"><input type="radio" name="deadline" value="1m"><span><b data-i="f.d2">Within a month</b></span></label>
+                <label class="chip chip--sm"><input type="radio" name="deadline" value="3m"><span><b data-i="f.d3">Within 3 months</b></span></label>
+                <label class="chip chip--sm"><input type="radio" name="deadline" value="flex"><span><b data-i="f.d4">No rush</b></span></label>
+              </div>
+            </fieldset>
+            <div class="pf-hp" aria-hidden="true"><label>Leave this field empty <input name="mq_hp" type="text" tabindex="-1" autocomplete="off"></label></div>
+            <div class="pf-human" aria-label="Human check"></div>
+            <label class="pf-consent"><input type="checkbox" name="consent" required><span data-i="f.consent">I agree that Masquo uses this information only to reply to my request. It is kept for 12 months at most, with the sending IP address, country and browser (for security), then deleted. The anti-robot check is run by Cloudflare.</span></label>
+            <p class="pf-err" role="alert" hidden></p>
+            <button class="pill pf-send" type="submit"><span data-i="f.send">Send my request</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            <p class="pform__fine" data-i="c.fine">No commitment: you decide after reading my proposal.</p>
+          </div>
+          <div class="pform__done" hidden tabindex="-1">
+            <span class="pform__check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            <h3><span data-i="f.ok.t">Thank you</span><span class="pform__who"></span></h3>
+            <p data-i="f.ok.p">Your request has arrived. I'll reply by email, usually within 24 hours. Remember to check your spam folder.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__in">
+      <a class="logo" href="#main">masquo<b>.</b></a>
+      <p data-i="ft.p">Shopify stores, automations, Excel dashboards and Android apps.</p>
+      <p class="foot__also"><span data-i="ft.also">Also on</span> <a href="https://www.fiverr.com/devappmob" target="_blank" rel="noopener">Fiverr</a></p>
+      <p class="foot__fine" data-i="f.priv">IP address, approximate location (country, region, city), internet provider, page visited, source, browser and language are kept for 30 days, for security and statistics.</p>
+      <p class="foot__fine">© 2026 Masquo</p>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" aria-label="Media">
+    <button class="lightbox__close" type="button" aria-label="Close">×</button>
+    <div class="lightbox__scroll"><img decoding="async" class="lightbox__img" src="data:," alt=""><video class="lightbox__video" controls playsinline preload="none" hidden></video></div>
+    <p class="lightbox__hint" data-i="lb.hint">Click the image to zoom in · scroll to explore</p>
+  </dialog>
+
+  <script src="script.js?v=20261127c"></script>
+</body>
+</html>

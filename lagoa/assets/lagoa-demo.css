@@ -1,0 +1,19 @@
+/* LAGOA, copie de présentation : boutons de langue en liens, paiement de démonstration, message de fin */
+html { overflow-x: clip; }
+html[lang="fr"] .lens__in--l > * { zoom: 0.82; }
+.lang a { display: inline-flex; align-items: center; justify-content: center; min-width: 38px; height: 28px; border-radius: 99px; color: inherit; font-weight: 600; font-size: 12px; letter-spacing: 0.1em; text-decoration: none; }
+.lang a[aria-pressed="true"] { background: #fff; color: var(--c-text); }
+.mnav .lang { margin: 18px 0 0; align-self: flex-start; width: max-content; }
+.demo-pay { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.demo-pay__btn { height: 46px; border: 0; border-radius: 12px; background: #0b0b0b; color: #fff; font: 600 15px/1 var(--font-b, sans-serif); cursor: pointer; }
+.demo-pay__btn:hover { background: #222; }
+.demo-note { margin: 10px 0 0; font-size: 12px; opacity: 0.75; text-align: center; }
+.foot__demo { max-width: 34ch; margin: 0 0 8px; font-size: 13.5px; line-height: 1.5; opacity: 0.85; }
+.foot__demo a { color: inherit; font-weight: 600; }
+.demo-done { position: fixed; inset: 0; z-index: 200; display: grid; place-items: center; padding: 20px; background: rgba(3, 40, 52, 0.55); opacity: 0; visibility: hidden; transition: opacity 0.3s, visibility 0.3s; }
+.demo-done.is-on { opacity: 1; visibility: visible; }
+.demo-done__card { width: min(440px, 100%); padding: 30px 28px 26px; border-radius: 26px; background: #fff; color: var(--c-text, #063); text-align: center; box-shadow: 0 30px 80px -30px rgba(0, 30, 40, 0.8); transform: translateY(14px) scale(0.97); transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.demo-done.is-on .demo-done__card { transform: none; }
+.demo-done__k { margin: 0 0 6px; color: #e2563a; font-size: 12px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; }
+.demo-done h2 { margin: 0 0 10px; font-family: var(--font-h, serif); font-size: 30px; font-weight: 400; }
+.demo-done p { margin: 0 0 18px; line-height: 1.5; }
